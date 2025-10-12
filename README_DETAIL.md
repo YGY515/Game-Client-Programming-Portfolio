@@ -16,7 +16,7 @@
  > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83) <br>
  > 🔨 [담당 구현](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EA%B5%AC%ED%98%84) <br>
  > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98) <br>
- > 💻 [코드 샘플]()
+ > 💻 [코드 샘플](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/%EC%BD%94%EB%93%9C%3A%20%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4%20%EB%A6%AC%EB%B9%8C%EB%93%9C)
        </a>
       </td>
           <td valign="top">
@@ -29,7 +29,7 @@
  > 🔨 [담당 역할](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EC%97%AD%ED%95%A0) <br>
  > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-1) <br>
  > ✨ [피드백 반영 및 개선 과정](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%BC%EB%93%9C%EB%B0%B1-%EB%B0%98%EC%98%81-%EB%B0%8F-%EA%B0%9C%EC%84%A0-%EA%B3%BC%EC%A0%95) <br>
- > 💻 [코드 샘플]()
+ > 💻 [코드 샘플](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/%EC%BD%94%EB%93%9C%3A%20%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)
       </a>
       </td>
             <td valign="top">
@@ -50,7 +50,7 @@
 > 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-3) <br>
 > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-2) <br>
 > 🔨 [담당 역할](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EC%97%AD%ED%95%A0-1) <br>
-> 💻 [코드 샘플](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EC%BD%94%EB%93%9C-%EC%83%98%ED%94%8C-2) <br>
+> 💻 [코드 샘플](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/PlayTale) <br>
 </a></td>
     </tr>
   </tbody>
@@ -199,7 +199,7 @@
 
 ## 💻 코드 샘플
 
-[코드: 안티데시스 리빌드](링크 예시)
+[코드: 안티데시스 리빌드](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/%EC%BD%94%EB%93%9C%3A%20%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4%20%EB%A6%AC%EB%B9%8C%EB%93%9C)
 
 
 <br><br>
@@ -359,6 +359,26 @@ urban fantasy 등의 키워드를 활용함)
 
 <br><br>
 
+### 4) 해상도 출력 오류
+
+게임 내에서 지도 기능을 켤 때, 혹은 플레이 도중 우측에 스크롤바가 생기며 화면이 덜덜 떨리는 오류가 있었음.
+
+<br>
+
+**<원인 분석>**
+
+- <b>UI 크기가 화면의 해상도와 맞지 않아</b> 생기는 원인으로 추정함.
+
+- 마우스 드래그로 창의 크기를 변경한 후 일어났으며, 게임의 해상도에 맞춰 지도 UI의 캔버스가 이에 따라 변경되는 것으로 추정함.
+
+<br>
+
+**<해결 방법>**
+- 창 크기를 고정하는 스크립트를 추가하고 화면 해상도를 전체 화면 혹은 1280x720을 지원하도록 함.
+  ([해당 코드](링크 필요))
+
+<br><br>
+
 ## ✨ 피드백 반영 및 개선 과정
 ### 1) 게임에 목표가 없다는 피드백
 **<문제 상황>**
@@ -423,7 +443,7 @@ urban fantasy 등의 키워드를 활용함)
 
 ## 💻 코드 샘플
 
-[코드: 안티데시스](링크 예시)
+[코드: 안티데시스](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/%EC%BD%94%EB%93%9C%3A%20%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)
 
 
 <br><br>
@@ -607,4 +627,4 @@ PlayTale은 바보 온달과 평강공주 이야기를 보여주며 미니게임
 
 ## 💻 코드 샘플
 
-[PlayTale](링크 예시)
+[PlayTale](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/PlayTale)
