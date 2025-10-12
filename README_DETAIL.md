@@ -4,7 +4,57 @@
 
 
 # 프로젝트 목차
+<table>
+  <tbody>
+    <tr>
+      <td valign="top">
+       <a>
+        
+ 🎮 [코드: 안티데시스 리빌드](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#1-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EB%B9%8C%EB%93%9C) <br><br>
+ > 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C) <br>
+ > 🎯 [핵심 특징](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%95%B5%EC%8B%AC-%ED%8A%B9%EC%A7%95) <br>
+ > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83) <br>
+ > 🔨 [담당 구현](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EA%B5%AC%ED%98%84) <br>
+ > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98) <br>
+ > 💻 [코드 샘플]()
+       </a>
+      </td>
+          <td valign="top">
+      <a>
+ 🎮 [코드: 안티데시스](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4) <br><br>
+ 
+ > 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-1) <br>
+ > 📖 [스토리](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EC%8A%A4%ED%86%A0%EB%A6%AC) <br>
+ > ✏️ [느낀 점과 회고](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8A%90%EB%82%80-%EC%A0%90%EA%B3%BC-%ED%9A%8C%EA%B3%A0) <br>
+ > 🔨 [담당 역할](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EC%97%AD%ED%95%A0) <br>
+ > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-1) <br>
+ > ✨ [피드백 반영 및 개선 과정](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%BC%EB%93%9C%EB%B0%B1-%EB%B0%98%EC%98%81-%EB%B0%8F-%EA%B0%9C%EC%84%A0-%EA%B3%BC%EC%A0%95) <br>
+ > 💻 [코드 샘플]()
+      </a>
+      </td>
+            <td valign="top">
+      <a>
+      📖 [플레이테일 박씨전](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#3-%ED%94%8C%EB%A0%88%EC%9D%B4%ED%85%8C%EC%9D%BC-%EB%B0%95%EC%94%A8%EC%A0%84) <br><br>
 
+> 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-2) <br>
+> 🎯 [핵심 특징](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%95%B5%EC%8B%AC-%ED%8A%B9%EC%A7%95-1) <br>
+> ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-1) <br>
+> 🔨 [담당 구현](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EA%B5%AC%ED%98%84-1) <br>
+> 🛠️ [문제 해결 경험](https://github.com/Mekdlsdl/Game-Client-Programmer-Portfolio/blob/main/DETAIL.md#-%EC%BD%94%EB%93%9C-%EC%83%98%ED%94%8C-2) <br>
+      </a>
+      </td>
+          <td valign="top">
+     <a>
+     🕹️ [PlayTale](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#4-playTale) <br><br>
+
+> 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-3) <br>
+> ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-2) <br>
+> 🔨 [담당 역할](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EC%97%AD%ED%95%A0-1) <br>
+> 💻 [코드 샘플](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EC%BD%94%EB%93%9C-%EC%83%98%ED%94%8C-2) <br>
+</a></td>
+    </tr>
+  </tbody>
+</table>
 
 
 <br><br>
@@ -205,7 +255,7 @@
 
 <br>
 
-## 📖 느낀 점과 회고
+## ✏️ 느낀 점과 회고
 
 - 플레이어의 관점에서 <b>즐겁고 매력적인 경험을 제공하는 게임</b>을 목표로 개발해야겠다는 결심을 굳혔음.
 
@@ -215,7 +265,7 @@
 
 <br>
 
-## 📖 담당 역할
+## 🔨 담당 역할
 
 - 세계관 설정과 캐릭터를 포함한 스토리 기획을 담당함.
 
@@ -309,7 +359,7 @@ urban fantasy 등의 키워드를 활용함)
 
 <br><br>
 
-## 📖 피드백 반영 및 개선 과정
+## ✨ 피드백 반영 및 개선 과정
 ### 1) 게임에 목표가 없다는 피드백
 **<문제 상황>**
 
@@ -501,12 +551,12 @@ urban fantasy 등의 키워드를 활용함)
 <br><br>
 
 
-# 4. Playtale
+# 4. PlayTale
 <img align='right' img width="45%" src="https://github.com/user-attachments/assets/fd152cb9-ebb5-48c7-a7b0-bc5b4e6f9166" />
 바보 온달과 평강공주 스토리를 전달하고 미니게임이 진행되는 콘텐츠<br><br>
 
 
-- <b>시연 영상</b>: [Playtale](https://youtu.be/-mlkDAKG7YU?si=UaDL4Ykx6hD2Ejil)
+- <b>시연 영상</b>: [PlayTale](https://youtu.be/-mlkDAKG7YU?si=UaDL4Ykx6hD2Ejil)
 
 - <b>장르 및 개발 인원</b>: 스토리+미니게임 / 9명
 
@@ -521,7 +571,7 @@ urban fantasy 등의 키워드를 활용함)
     
 ## 📝 게임 소개
 
-Playtale은 바보 온달과 평강공주 이야기를 보여주며 미니게임이 진행되는 콘텐츠입니다.<br>
+PlayTale은 바보 온달과 평강공주 이야기를 보여주며 미니게임이 진행되는 콘텐츠입니다.<br>
 
 졸업 작품으로 <b>팀장</b>을 맡아 타 대학 디자인팀 4명과 개발팀 5명을 이끌어 8개월간 진행한 프로젝트입니다.<br>
 제작년 4월부터 11월까지 약 8개월 동안 제작했으며, 졸업 작품 전시에서 <b>수상</b>하였습니다.<br>
@@ -557,4 +607,4 @@ Playtale은 바보 온달과 평강공주 이야기를 보여주며 미니게임
 
 ## 💻 코드 샘플
 
-[Playtale](링크 예시)
+[PlayTale](링크 예시)
