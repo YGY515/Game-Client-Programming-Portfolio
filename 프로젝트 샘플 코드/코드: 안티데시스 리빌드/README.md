@@ -4,8 +4,17 @@
 
 <br>
 
+### Controller
+게임 내 주요 오브젝트를 조작하는 코드입니다.
+- BossController: 보스의 상태를 관리합니다.
+- CameraController: 카메라가 플레이어를 중심으로 위치하고, 치명타 시 줌 연출이 포함되어 있습니다.
+- EnemyController: 보스가 소환하는 하위 몬스터를 조작하는 코드입니다.
+- NpcController: NPC가 플레이어와 상호작용 하는 것을 관리합니다.
+- PlayerCotroller: 입력키에 따른 플레이어의 이동과 무기 조작 등 전반적인 조작을 담당합니다.
+<br>
+
 ### Manager
-게임 내 주요 기능을 관리하기 위해 사용되었던 코드입니다.
+게임 내 주요 기능을 관리하는 코드입니다.
 - BossPhaseManager: 보스의 페이즈를 관리하고, 필요 시 페이즈를 1단계 올리는 AdvancePhase 함수가 있습니다.
 - DamageTextManager: 플레이어가 보스를 공격할 시 출력되는 데미지 숫자를 관리합니다.
 - DialogueManager: NPC와 플레이어의 대사가 한 글자식 따각따각 출력되기 위해 사용한 코드입니다.
