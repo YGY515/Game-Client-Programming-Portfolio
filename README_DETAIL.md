@@ -375,7 +375,7 @@ urban fantasy 등의 키워드를 활용함)
 
 **<해결 방법>**
 - 창 크기를 고정하는 스크립트를 추가하고 화면 해상도를 전체 화면 혹은 1280x720을 지원하도록 함.
-  ([해당 코드](링크 필요))
+  ([해당 코드](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/%EC%BD%94%EB%93%9C%3A%20%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4/Scene_fix.js))
 
 <br><br>
 
