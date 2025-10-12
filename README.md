@@ -10,7 +10,7 @@
 <br><br>
 
 # 프로젝트 💻
-## 코드: 안티데시스 리빌드 - 상세내용
+## 1. 코드: 안티데시스 리빌드 - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#1-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EB%B9%8C%EB%93%9C)
 > 출시한 게임의 보스전을 Unity 2D로 재구성해보는 프로젝트<br>
 > 2025. 5 ~ 2025. 7 / 이후 프로젝트 최적화와 코드 수정 진행 중
 ### 사용 기술과 언어
@@ -26,7 +26,7 @@
 
 <br>
 
-## 코드: 안티데시스 - 상세내용
+## 2. 코드: 안티데시스 - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)
 > 스토리 위주의 액션 어드벤처와 비주얼 노벨 요소를 가미한 게임 개발 프로젝트<br>
 > 2024. 5 ~ 2024. 12 / 스팀과 스토브 데모 출시
 ### 사용 기술과 언어
@@ -40,7 +40,7 @@
 
 <br>
 
-## 플레이테일 박씨전 - 상세내용
+## 3. 플레이테일 박씨전 - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#3-%ED%94%8C%EB%A0%88%EC%9D%B4%ED%85%8C%EC%9D%BC-%EB%B0%95%EC%94%A8%EC%A0%84)
 > 전래동화 박씨전의 이야기를 전달하고 미니게임을 통해 스토리를 진행하는 프로젝트<br>
 > 2023. 7 ~ 2023. 9 / 모바일앱개발협동조합 인턴 / Android와 iOS 출시
 ### 사용 기술과 언어
@@ -54,13 +54,13 @@
 
 <br>
 
-## Unity 3D기반 전래동화 아동 콘텐츠 - 상세내용
+## 4. PlayTale - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#4-playtale)
 > 바보 온달과 평강공주 이야기를 바탕으로 스토리를 전달하고 미니게임이 진행되는 콘텐츠<br>
 > 2023. 4 ~ 2023. 11 / 졸업 작품 캡스톤
 ### 사용 기술과 언어
 * Unity 3D, C#, Visual Studio
 
-### 담당 부분과 경험
+### Playtale
 * 팀장을 맡아 개발팀 5명과 디자인팀 4명을 이끈 경험
 * 개발 팀원들의 역할을 분배하고 작업 효율을 위해 Unity Verson Control을 구축하여 프로젝트를 관리한 경험
 * 디자인 팀과 디스코드, 피그마, 노션을 통해 소통하고 개발 진도를 공유한 경험
