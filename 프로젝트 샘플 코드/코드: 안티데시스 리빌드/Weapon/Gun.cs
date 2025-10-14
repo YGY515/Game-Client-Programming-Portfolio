@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Gun : MonoBehaviour, IWeapon
@@ -8,20 +7,20 @@ public class Gun : MonoBehaviour, IWeapon
     public Transform gunTransform;
     public AudioClip shootClip;
     public LayerMask BossLayer;
-    public float bulletRange = 5f;
-    public float bulletAngle = 40f; // 총의 부채꼴 각도
 
     public Animator playerAnimator;
     public AudioSource audioSource;
     public BossHealth bossHealth;
     public GameObject boss;
+    public WeaponData weaponData;
+
 
 
     void OnDrawGizmosSelected()
     {
         // 씬 뷰에서 기즈모로 총 범위 보이게
         Gizmos.color = new Color(1f, 0.5f, 0f, 0.3f); 
-        Gizmos.DrawWireSphere(transform.position, bulletRange);
+        Gizmos.DrawWireSphere(transform.position, weaponData.bulletRange);
 
         Vector3 origin = transform.position;
 
@@ -45,15 +44,15 @@ public class Gun : MonoBehaviour, IWeapon
         }
 
         int segments = 30;
-        float halfAngle = bulletAngle * 0.5f;
+        float halfAngle = weaponData.bulletAngle * 0.5f;
         float startAngle = -halfAngle;
-        float deltaAngle = bulletAngle / segments;
+        float deltaAngle = weaponData.bulletAngle / segments;
 
-        Vector3 prevPoint = origin + Quaternion.Euler(0, 0, startAngle) * forward * bulletRange;
+        Vector3 prevPoint = origin + Quaternion.Euler(0, 0, startAngle) * forward * weaponData.bulletRange;
         for (int i = 1; i <= segments; i++)
         {
             float currAngle = startAngle + deltaAngle * i;
-            Vector3 nextPoint = origin + Quaternion.Euler(0, 0, currAngle) * forward * bulletRange;
+            Vector3 nextPoint = origin + Quaternion.Euler(0, 0, currAngle) * forward * weaponData.bulletRange;
             Gizmos.color = new Color(0f, 0.7f, 1f, 0.7f); 
             Gizmos.DrawLine(origin, nextPoint);
             Gizmos.DrawLine(prevPoint, nextPoint);
@@ -142,14 +141,14 @@ public class Gun : MonoBehaviour, IWeapon
             case 3: fireDir = Vector2.right; break;
         }
 
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, bulletRange, BossLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, weaponData.bulletRange, BossLayer);
 
         foreach (var hit in hits)
         {
             Vector2 toTarget = (hit.transform.position - transform.position).normalized;
             float angle = Vector2.Angle(fireDir, toTarget);
 
-            if (angle <= bulletAngle / 2f)
+            if (angle <= weaponData.bulletAngle / 2f)
             {
                 bool isCritical = Random.value < 0.3f; // 치명타 30퍼
                 int Damage = isCritical ? 30 : Random.Range(20, 29); // 치명타면 공격력 30, 아니면 20~29 사이

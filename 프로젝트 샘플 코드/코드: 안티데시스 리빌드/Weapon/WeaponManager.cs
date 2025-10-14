@@ -1,25 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
+
 
 public class WeaponManager : MonoBehaviour
 {
+    public WeaponData weaponData;
     public GameObject[] weaponObjects;
     private IWeapon currentWeapon;
-    private int weapon_index = 0;
 
     
     void Start()
     {
-        currentWeapon = weaponObjects[weapon_index].GetComponent<IWeapon>();
+        currentWeapon = weaponObjects[weaponData.weapon_index].GetComponent<IWeapon>();
 
         if (currentWeapon == null)
-            Debug.LogError($"{weaponObjects[weapon_index].name} 오브젝트에 IWeapon 컴포넌트가 없음");
+            Debug.LogError($"{weaponObjects[weaponData.weapon_index].name} 오브젝트에 IWeapon 컴포넌트가 없음");
 
-        weaponObjects[weapon_index].SetActive(false);
+        weaponObjects[weaponData.weapon_index].SetActive(false);
 
     }
 
@@ -35,8 +31,8 @@ public class WeaponManager : MonoBehaviour
 
     public void ChangeWeapon()
     {
-        weapon_index = (weapon_index + 1) % weaponObjects.Length;
-        currentWeapon = weaponObjects[weapon_index].GetComponent<IWeapon>();
+        weaponData.weapon_index = (weaponData.weapon_index + 1) % weaponObjects.Length;
+        currentWeapon = weaponObjects[weaponData.weapon_index].GetComponent<IWeapon>();
 
     }
 }
