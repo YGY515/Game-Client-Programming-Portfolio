@@ -18,31 +18,15 @@ public class BossController : MonoBehaviour
     public Rigidbody2D rb;
     public PlayerHealth playerHealth;
     public BossHealth bossHealth;
+    public BossData bossData;
 
     private Vector2 currentDirection;
     private Vector2 randomDirection;
-    private float randomMoveInterval = 0.5f;
-    private float restInterval = 1f;
+
     private bool isMoving = true;
-    private float moveTimer = 0f;
-
-    private float moveSpeed = 5.0f;
-    private float dashSpeed = 7.5f;
-    private float dashDuration = 0.5f;
-    private float dashCooldown = 1.0f;
-
     private bool isDashing = false;
-    private float dashTimer = 0f;
-    private float cooldownTimer = 0f;
-
-    public float attackCooldown = 2.0f;
-    public float attackDistanceX = 0.05f;
-    public float attackDistanceY = 0.05f;
-    public float dashDistance = 0.5f;
-    public int damageAmount = 1;
 
     private Coroutine stateCoroutine;
-
     private BossState currentState;
 
     void Start()
@@ -83,7 +67,7 @@ public class BossController : MonoBehaviour
                     ChangeState(BossState.Attack);
                 break;
 
-                // Attack, Rest, Dead는 코루틴에서 처리함
+                // Attack, Rest, Dead는 코루틴에서 처리하기
                 // Attack: AttackStateCoroutine, DashRoutine
                 // Rest: RestStateCoroutine
                 // Dead: OnBossDied
@@ -94,7 +78,7 @@ public class BossController : MonoBehaviour
     {
         if (currentState == BossState.Chase)
         {
-            rb.MovePosition(rb.position + currentDirection * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + currentDirection * bossData.moveSpeed * Time.fixedDeltaTime);
         }
     }
 
@@ -122,25 +106,24 @@ public class BossController : MonoBehaviour
         }
     }
 
-    // 상태별 동작
 
     void RandomMoveWithPause()
     {
-        moveTimer += Time.deltaTime;
+        bossData.moveTimer += Time.deltaTime;
         if (isMoving)
         {
             MoveAndAnimate(randomDirection);
-            if (moveTimer >= randomMoveInterval)
+            if (bossData.moveTimer >= bossData.randomMoveInterval)
             {
-                moveTimer = 0f;
+                bossData.moveTimer = 0f;
                 isMoving = false;
             }
         }
         else
         {
-            if (moveTimer >= restInterval)
+            if (bossData.moveTimer >= bossData.restInterval)
             {
-                moveTimer = 0f;
+                bossData.moveTimer = 0f;
                 isMoving = true;
                 PickRandomDirection();
             }
@@ -155,28 +138,28 @@ public class BossController : MonoBehaviour
 
     void HandleChaseWithDash()
     {
-        if (!isDashing && cooldownTimer <= 0f)
+        if (!isDashing && bossData.cooldownTimer <= 0f)
         {
             isDashing = true;
-            dashTimer = dashDuration;
+            bossData.dashTimer = bossData.dashDuration;
         }
 
         if (isDashing)
         {
-            moveSpeed = dashSpeed;
-            dashTimer -= Time.deltaTime;
-            if (dashTimer <= 0f)
+            bossData.moveSpeed = bossData.dashSpeed;
+            bossData.dashTimer -= Time.deltaTime;
+            if (bossData.dashTimer <= 0f)
             {
                 isDashing = false;
-                cooldownTimer = dashCooldown;
-                moveSpeed = 5.0f;
+                bossData.cooldownTimer = bossData.dashCooldown;
+                bossData.moveSpeed = 5.0f;
             }
         }
         else
         {
-            moveSpeed = 5.0f;
-            if (cooldownTimer > 0f)
-                cooldownTimer -= Time.deltaTime;
+            bossData.moveSpeed = 5.0f;
+            if (bossData.cooldownTimer > 0f)
+                bossData.cooldownTimer -= Time.deltaTime;
         }
 
         ChasePlayer();
@@ -225,14 +208,14 @@ public class BossController : MonoBehaviour
         else if (dir == Vector2.down)
             anim.SetFloat("Looking", 0.00f);
 
-        transform.position += (Vector3)(dir.normalized * moveSpeed * Time.deltaTime);
+        transform.position += (Vector3)(dir.normalized * bossData.moveSpeed * Time.deltaTime);
     }
 
     bool IsPlayerInAttackRange()
     {
         if (player == null) return false;
         Vector2 diff = player.position - transform.position;
-        return Mathf.Abs(diff.x) <= attackDistanceX && Mathf.Abs(diff.y) <= attackDistanceY;
+        return Mathf.Abs(diff.x) <= bossData.attackDistanceX && Mathf.Abs(diff.y) <= bossData.attackDistanceY;
     }
 
     IEnumerator AttackStateCoroutine()
@@ -248,7 +231,7 @@ public class BossController : MonoBehaviour
     IEnumerator RestStateCoroutine()
     {
         // 공격 쿨타임 후 다시 Chase로 전이
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(bossData.attackCooldown);
         ChangeState(BossState.Chase);
     }
 
@@ -257,7 +240,7 @@ public class BossController : MonoBehaviour
         float dashTime = 0.2f;
         float elapsed = 0f;
         Vector2 startPos = rb.position;
-        Vector2 endPos = startPos + dashDir * dashDistance;
+        Vector2 endPos = startPos + dashDir * bossData.dashDistance;
 
         bool didDamage = false;
 
@@ -269,7 +252,7 @@ public class BossController : MonoBehaviour
 
             if (!didDamage && Vector2.Distance(newPos, player.position) <= 0.5f)
             {
-                playerHealth.PlayerTakeDamage(damageAmount);
+                playerHealth.PlayerTakeDamage(bossData.damageAmount);
                 didDamage = true;
             }
 

@@ -1,15 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public PlayerData playerData;
     public Animator anim;
     public Rigidbody2D rb;
-
     public WeaponManager weaponManager;
+
     [SerializeField] private BossHealth BossStatus;
     
     [SerializeField] private GameObject Baton_Icon;
@@ -26,10 +24,6 @@ public class PlayerController : MonoBehaviour
 
     private bool canAttack = true;
     private bool canDash = true;
-    private float Cooldown = 0.5f;
-
-    private float dashDuration = 0.5f;
-    private float dashSpeed = 3f;
     private bool isDashing = false;
 
 
@@ -53,7 +47,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("PositionX", horizontal);
         anim.SetFloat("PositionY", vertical);
 
-        Vector2 movement = new Vector2(horizontal, vertical).normalized * moveSpeed;
+        Vector2 movement = new Vector2(horizontal, vertical).normalized * playerData.moveSpeed;
         rb.velocity = movement;
 
 
@@ -65,12 +59,12 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
                     anim.SetBool("Flying", true);
-                    moveSpeed = 7f;
+                    playerData.moveSpeed = 7f;
                 }
                 else
                 {
                     anim.SetBool("Flying", false);
-                    moveSpeed = 5f;
+                    playerData.moveSpeed  = 5f;
                 }
             }
  
@@ -144,7 +138,7 @@ public class PlayerController : MonoBehaviour
             if (Baton_Icon != null) Baton_Icon.SetActive(false);
             if (Baton_Empty != null) Baton_Empty.SetActive(true);
 
-            yield return new WaitForSeconds(Cooldown);
+            yield return new WaitForSeconds(playerData.weaponCooldown);
 
             if (Baton_Icon != null) Baton_Icon.SetActive(true);
             if (Baton_Empty != null) Baton_Empty.SetActive(false);
@@ -158,7 +152,7 @@ public class PlayerController : MonoBehaviour
             if (Gun_Icon != null) Gun_Icon.SetActive(false);
             if (Gun_Empty != null) Gun_Empty.SetActive(true);
 
-            yield return new WaitForSeconds(Cooldown);
+            yield return new WaitForSeconds(playerData.weaponCooldown);
 
             if (Gun_Icon != null) Gun_Icon.SetActive(true);
             if (Gun_Empty != null) Gun_Empty.SetActive(false);
@@ -181,15 +175,15 @@ public class PlayerController : MonoBehaviour
         if (Dash_Icon != null) Dash_Icon.SetActive(false);
         if (Dash_Empty != null) Dash_Empty.SetActive(true);
 
-        float prevSpeed = moveSpeed;
-        moveSpeed += dashSpeed;
+        float prevSpeed = playerData.moveSpeed;
+        playerData.moveSpeed += playerData.dashSpeed;
 
-        yield return new WaitForSeconds(dashDuration);
+        yield return new WaitForSeconds(playerData.dashDuration);
 
-        moveSpeed = prevSpeed;
+        playerData.moveSpeed = prevSpeed;
         isDashing = false;
 
-        yield return new WaitForSeconds(Cooldown);
+        yield return new WaitForSeconds(playerData.weaponCooldown);
 
         if (Dash_Icon != null) Dash_Icon.SetActive(true);
         if (Dash_Empty != null) Dash_Empty.SetActive(false);

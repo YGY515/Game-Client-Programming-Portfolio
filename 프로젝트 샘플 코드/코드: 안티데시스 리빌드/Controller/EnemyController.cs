@@ -13,29 +13,21 @@ public class EnemyController : MonoBehaviour
     public AudioClip hitClip;
     public PlayerHealth playerHealth;
     public DialogueManager dialogueManager;
+    public EnemyData enemyData;
 
-    private float moveSpeed = 3.0f;
     private Vector2 currentDirection;
+    public bool canBeDamaged;
+    private int hp;
 
-    public bool canBeDamaged = false;
-    public int hp = 3;
-    public Color hitColor = Color.red;
-    public float hitEffectDuration = 0.2f;
-
-    public float attackCooldown = 2.0f;
-    public float attackDistanceX = 0.05f;
-    public float attackDistanceY = 0.05f;
-
-    public float dashDistance = 0.2f;
-    public int damageAmount = 1;
+    private Color hitColor = Color.red;
     private bool canAttack = true;
 
 
     void OnEnable()
     {
-        hp = 3;
+        hp = enemyData.hp;
         gameObject.SetActive(true);
-        canBeDamaged = false; 
+        canBeDamaged = enemyData.canBeDamaged; 
 
         playerHealth = FindObjectOfType<PlayerHealth>();
         dialogueManager = FindObjectOfType<DialogueManager>();
@@ -76,7 +68,7 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {
         if (canAttack && dialogueManager.isTyping == false)
-            rb.MovePosition(rb.position + currentDirection * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + currentDirection * enemyData.moveSpeed * Time.fixedDeltaTime);
         
     }
 
@@ -86,7 +78,7 @@ public class EnemyController : MonoBehaviour
 
         Vector2 diff = player.position - transform.position;
 
-        if (Mathf.Abs(diff.x) <= attackDistanceX && Mathf.Abs(diff.y) <= attackDistanceY)
+        if (Mathf.Abs(diff.x) <= enemyData.attackDistanceX && Mathf.Abs(diff.y) <= enemyData.attackDistanceY)
         {
             StartCoroutine(AttackCoroutine(diff));
         }
@@ -99,7 +91,7 @@ public class EnemyController : MonoBehaviour
         Vector2 dashDir = diff.normalized;
 
         yield return StartCoroutine(DashRoutine(dashDir));
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(enemyData.attackCooldown);
         canAttack = true;
     }
 
@@ -108,7 +100,7 @@ public class EnemyController : MonoBehaviour
         float dashTime = 0.2f;
         float elapsed = 0f;
         Vector2 startPos = rb.position;
-        Vector2 endPos = startPos + dashDir * dashDistance;
+        Vector2 endPos = startPos + dashDir * enemyData.dashDistance;
 
         bool didDamage = false;
 
@@ -120,7 +112,7 @@ public class EnemyController : MonoBehaviour
 
             if (!didDamage && Vector2.Distance(newPos, player.position) <= 0.1f)
             {
-                playerHealth.PlayerTakeDamage(damageAmount);
+                playerHealth.PlayerTakeDamage(enemyData.damageAmount);
                 didDamage = true;
             }
 
@@ -223,9 +215,9 @@ public class EnemyController : MonoBehaviour
         Color origin = spriteRenderer.color;
         spriteRenderer.color = hitColor;
         float t = 0;
-        while (t < hitEffectDuration)
+        while (t < enemyData.hitEffectDuration)
         {
-            spriteRenderer.color = Color.Lerp(hitColor, origin, t / hitEffectDuration);
+            spriteRenderer.color = Color.Lerp(hitColor, origin, t / enemyData.hitEffectDuration);
             t += Time.deltaTime;
             yield return null;
         }

@@ -6,7 +6,7 @@ public class NpcController : MonoBehaviour
 {
     public Animator anim;
     public Transform player; 
-    public float interactDistance = 2f;
+    private float interactDistance = 2f;
 
     public EnemyController[] enemies;
     public GameObject bossShield;
