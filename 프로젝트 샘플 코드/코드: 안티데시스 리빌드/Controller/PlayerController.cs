@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     public Rigidbody2D rb;
     public WeaponManager weaponManager;
+    public WeaponData weaponData;
 
     [SerializeField] private BossHealth BossStatus;
     
@@ -114,12 +115,12 @@ public class PlayerController : MonoBehaviour
             weaponManager.ChangeWeapon();
             { 
                 weapon_ChangeSource.PlayOneShot(Clip); 
-                if (weaponManager.weapon_index == 0)
+                if (weaponData.weapon_index == 0)
                 {
                     Baton_Icon.SetActive(true);
                     Gun_Icon.SetActive(false);
                 }
-                else if (weaponManager.weapon_index == 1)
+                else if (weaponData.weapon_index == 1)
                 {
                     Baton_Icon.SetActive(false);
                     Gun_Icon.SetActive(true);
@@ -131,7 +132,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator WeaponCooldown()
     {
-        if (weaponManager.weapon_index == 0)
+        if (weaponData.weapon_index == 0)
         {   
             // 근접 무기일 때
             canAttack = false;
@@ -145,7 +146,7 @@ public class PlayerController : MonoBehaviour
             canAttack = true;
         }
 
-        else if (weaponManager.weapon_index == 1)
+        else if (weaponData.weapon_index == 1)
         {   
             // 원거리 무기일 때
             canAttack = false;
