@@ -1,30 +1,26 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-
     public AudioSource Boss_audioSource;
     public AudioClip Boss_hitClip;
     public SpriteRenderer Boss_spriteRenderer;
     public Color Boss_hitColor = Color.red;
-    public float Boss_hitColorDuration = 1.0f;
+    public BossData bossData;
 
     public event Action<int> BossHealthChange;
     public event Action BossHealthPhase;
 
-    private int maxHealth = 500;
     private int currentHealth;
-
-    public int MaxHealth => maxHealth;
+    public int MaxHealth => bossData.maxHealth;
     public int CurrentHealth => currentHealth;
 
 
     void Awake()
     {
-        currentHealth = maxHealth;
+        currentHealth = bossData.maxHealth;
     }
 
     private Coroutine hitCoroutine;
@@ -51,7 +47,7 @@ public class BossHealth : MonoBehaviour
 
         BossHealthChange?.Invoke(currentHealth);
 
-        if (currentHealth <= maxHealth / 3)
+        if (currentHealth <= bossData.maxHealth / 3)
         {
             BossHealthPhase?.Invoke();
         }
@@ -64,9 +60,9 @@ public class BossHealth : MonoBehaviour
         Boss_spriteRenderer.color = Boss_hitColor;
 
         float elapsed = 0f;
-        while (elapsed < Boss_hitColorDuration)
+        while (elapsed < bossData.Boss_hitColorDuration)
         {
-            Boss_spriteRenderer.color = Color.Lerp(Boss_hitColor, originalColor, elapsed / Boss_hitColorDuration);
+            Boss_spriteRenderer.color = Color.Lerp(Boss_hitColor, originalColor, elapsed / bossData.Boss_hitColorDuration);
             elapsed += Time.deltaTime;
             yield return null;
         }

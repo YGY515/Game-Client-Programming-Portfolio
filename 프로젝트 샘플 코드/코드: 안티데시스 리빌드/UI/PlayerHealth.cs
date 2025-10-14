@@ -10,21 +10,19 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip hitClip;
     public SpriteRenderer spriteRenderer;
     public Color hitColor = Color.red;
-    public float hitColorDuration = 1.0f;
+    public PlayerData playerData;
 
     public event Action<int> HealthChange;
     public event Action HealthWarning;
 
-    private int maxHealth = 3;
     private int currentHealth;
-
-    public int MaxHealth => maxHealth;
+    public int MaxHealth => playerData.maxHealth;
     public int CurrentHealth => currentHealth;
 
 
     void Awake()
     {
-        currentHealth = maxHealth;
+        currentHealth = playerData.maxHealth;
     }
 
     private Coroutine hitCoroutine;
@@ -35,9 +33,9 @@ public class PlayerHealth : MonoBehaviour
         spriteRenderer.color = hitColor;
 
         float elapsed = 0f;
-        while (elapsed < hitColorDuration)
+        while (elapsed < playerData.hitColorDuration)
         {
-            spriteRenderer.color = Color.Lerp(hitColor, originalColor, elapsed / hitColorDuration);
+            spriteRenderer.color = Color.Lerp(hitColor, originalColor, elapsed / playerData.hitColorDuration);
             elapsed += Time.deltaTime;
             yield return null;
         }
@@ -68,7 +66,7 @@ public class PlayerHealth : MonoBehaviour
         HealthChange?.Invoke(currentHealth);
         //Debug.Log($"플레이어 받은 데미지: {damage}, 현재 체력: {currentHealth}");
 
-        if (currentHealth <= maxHealth / 3)
+        if (currentHealth <= playerData.maxHealth / 3)
         {
             HealthWarning?.Invoke();
         }
@@ -79,7 +77,7 @@ public class PlayerHealth : MonoBehaviour
         if (amount <= 0) return;
 
         currentHealth += amount;
-        currentHealth = Mathf.Min(currentHealth, maxHealth);
+        currentHealth = Mathf.Min(currentHealth, playerData.maxHealth);
 
         HealthChange?.Invoke(currentHealth);
     }
