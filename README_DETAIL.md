@@ -78,15 +78,11 @@
     
 ## 📝 게임 소개
 
-코드: 안티데시스 리빌드는 이전에 출시한 게임 [코드: 안티데시스](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)의 핵심 콘텐츠인<br>
-후반부 보스전을 Unity 2D로 <b>재구성</b>한 프로젝트 입니다.<br>
+코드: 안티데시스 리빌드는 이전에 출시한 게임 [코드: 안티데시스](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)의 보스전을 Unity로 재구성해보며<br> <b>코드 구조화</b>와 <b>재사용성</b>을 배우고자 한 프로젝트 입니다.<br><br>
 
-원본 엔진로 구현했던 보스전의 구조적 한계를 느껴 확장성 높은 구조를 제작하기 위해 Unity 3D 환경에서 재구성하게 되었습니다.<br><br>
+원본 게임에서 무기 추가와 교체, 보스의 HP 표시, 데미지 숫자와 치명타 표시 연출과 같은 기능이 추가적으로 구현되었습니다.<br>
 
-원본 게임에서 무기 추가와 교체, 보스의 HP 표시, 데미지 숫자와 치명타 표시 연출과 같은 기능을 더해<br>
-플레이 경험을 확장하고, <b>코드 구조화</b>와 <b>유지보수성 개선</b>을 목표로 했습니다.
-
-또한 <b>매주 개발 일지를 작성</b>해 보며 제작 진도를 나간 것과 발생한 오류에 대한 대처를 기록하여 프로젝트를 되돌아보았습니다.<br>
+또한 매주 <b>개발 일지</b>를 작성해 보며 제작 진도를 나간 것과 발생한 오류에 대한 대처를 기록하여 프로젝트를 되돌아보았습니다.<br>
 ([제작 일지 1주차](https://sicarope-dev.tistory.com/82), [마지막 주차](https://sicarope-dev.tistory.com/91))
  
 
