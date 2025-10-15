@@ -25,7 +25,7 @@
  
  > 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-1) <br>
  > 📖 [스토리](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EC%8A%A4%ED%86%A0%EB%A6%AC) <br>
- > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%8A%90%EB%82%80-%EC%A0%90%EA%B3%BC-%ED%9A%8C%EA%B3%A0) <br>
+ > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-1) <br>
  > 🔨 [담당 역할](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EC%97%AD%ED%95%A0) <br>
  > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-1) <br>
  > ✨ [피드백 반영 및 개선 과정](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%BC%EB%93%9C%EB%B0%B1-%EB%B0%98%EC%98%81-%EB%B0%8F-%EA%B0%9C%EC%84%A0-%EA%B3%BC%EC%A0%95) <br>
@@ -63,7 +63,7 @@
 출시한 게임의 보스전을 Unity 2D로 재구성해보는 프로젝트<br><br>
 
 
-- <b>시연 영상</b>: [코드: 안티데시스 리빌드](https://youtu.be/igJZ_s38T8w?si=ljie3Aei8k3IiXmC)
+- <b>시연 영상</b>: [코드: 안티데시스 리빌드](https://youtu.be/ZpjuvZmn8mQ?si=qQK8DuOiAsKAggxN)
 
 - <b>장르 및 개발 인원</b>: 전투 / 1명
 
@@ -263,7 +263,7 @@
 
 - 결과로 받은 피드백을 지속적으로 패치하는 과정을 겪으며, <b>결과 또한 과정의 일부가 될 수 있음을 깨달았음.</b>
 
-- 보스 패턴 설계 시 상태를 정의하고 구현하기가 쉽지 않아 <b>FSM 설계</b>의 중요성을 체감했음.
+- 보스 패턴 설계 시 상태를 정의하고 구현하기가 쉽지 않아 <b>FSM 설계</b>의 중요성을 체감했음.<br>
   이후 리빌드 프로젝트에서 FSM 구조를 직접 설계해 보며 이 개념을 체득할 수 있었음.
 
 <br>
@@ -352,7 +352,7 @@ urban fantasy 등의 키워드를 활용함)
 - 모든 기기에서 확인되는 것이 아닌, <b>QHD(2560x1440) 이상의 모니터 해상도에서 발생</b>하는 것을 파악함.
 
 - 엔진에 사용된 <b>PixiJS</b>를 오류 없이 지원하는 가장 높은 버전 6.0.4으로 업데이트 하였으나 사라지지 않았음.
-  ([해당 PixiJS](https://github.com/pixijs/pixijs/releases?after=v4.4.5)) 
+  ([해당 PixiJS](https://github.com/pixijs/pixijs/releases/tag/v6.0.4)) 
 
 <br>
 
@@ -607,7 +607,7 @@ PlayTale은 바보 온달과 평강공주 이야기를 보여주며 미니게임
 
   예시1) Unity의 UI 구조를 설명해야 하는 경우가 있었는데,<br> 이때 Unity의 UI 계층은 포토샵의 레이어와 다르게 아래 오브젝트일수록 상위에 표시됨을 설명함.
 
-  예시2) 일부 모델링은 발판의 위치가 이상했는데, 디자이너의 입장에서 고려해<br> 블렌더에서 모델링 발판의 위치를 (0, 0, 0)에 조절해 달라는 피드백을 전달함.
+  예시2) 일부 모델링은 발판의 위치가 이상했는데, 디자이너의 입장에서 고려해<br> 블렌더에서 모델링 발판의 위치를 (0, 0, 0)에 조절해 달라는 피드백을 전달함.<br><br>
 
 - 이러한 피드백이 여러 번 전달된 뒤에는 매주 한 번 진행된 회의가 <b>2주에 한 번</b>으로 진행되어도 충분할 정도로 효율화가 이루어짐.
 
@@ -621,71 +621,7 @@ PlayTale은 바보 온달과 평강공주 이야기를 보여주며 미니게임
 
 - 개발 팀원들의 역할을 분배하고 작업 효율을 위해 <b>Unity Version Control</b>을 구축하여 프로젝트를 관리함.
 
-- Unity Version Control에 프로젝트 커밋 시 문구
-<br>
-
-**<배우게 된 점>**
-
-- 오브젝트의 이동 문제를 해결하기 위해 때로는 특정 축 값을 고정하는 방법으로도 해결할 수 있음을 배우게 됨.
-  
-- <b>렌더링 파이프라인</b>에서 월드 스페이스와 카메라 스페이스 변환 과정을 이해하게 되는 계기가 됨.
-
-
-<br><br>
-
----
-
-<br><br>
-
-
-# 4. PlayTale
-<img align='right' img width="45%" src="https://github.com/user-attachments/assets/fd152cb9-ebb5-48c7-a7b0-bc5b4e6f9166" />
-바보 온달과 평강공주 스토리를 전달하고 미니게임이 진행되는 콘텐츠<br><br>
-
-
-- <b>시연 영상</b>: [PlayTale](https://youtu.be/-mlkDAKG7YU?si=UaDL4Ykx6hD2Ejil)
-
-- <b>장르 및 개발 인원</b>: 스토리+미니게임 / 9명
-
-- <b>개발 기간</b>: 2023. 4 ~ 2024. 11
-
-- <b>개발 환경</b>
-
-  - <b>언어</b>: C#
-  - <b>엔진</b>: Unity 3D
-
-<br>
-    
-## 📝 게임 소개
-
-PlayTale은 바보 온달과 평강공주 이야기를 보여주며 미니게임이 진행되는 콘텐츠입니다.<br>
-
-졸업 작품으로 <b>팀장</b>을 맡아 타 대학 디자인팀 4명과 개발팀 5명을 이끌어 8개월간 진행한 프로젝트입니다.<br>
-제작년 4월부터 11월까지 약 8개월 동안 제작했으며, 졸업 작품 전시에서 <b>수상</b>하였습니다.<br>
-
-<br>
-
-## ✅ 프로젝트에서 얻은 것
-
-- <b>디자이너의 입장에서 이해하기 쉽도록</b> 피드백을 전달하는 경험을 쌓을 수 있었음.
-
-  예시1) Unity의 UI 구조를 설명해야 하는 경우가 있었는데,<br> 이때 Unity의 UI 계층은 포토샵의 레이어와 다르게 아래 오브젝트일수록 상위에 표시됨을 설명함.
-
-  예시2) 일부 모델링은 발판의 위치가 이상했는데, 디자이너의 입장에서 고려해<br> 블렌더에서 모델링 발판의 위치를 (0, 0, 0)에 조절해 달라는 피드백을 전달함.
-
-- 이러한 피드백이 여러 번 전달된 뒤에는 매주 한 번 진행된 회의가 <b>2주에 한 번</b>으로 진행되어도 충분할 정도로 효율화가 이루어짐.
-
-- 협업에서 배운 경험을 토대로 대규모 프로젝트 참여 시 팀의 커뮤니케이션에 기여하고자 함.
-
-<br>
-
-## 📖 담당 역할
-
-- 팀장으로서 디자인 팀과 디스코드, 피그마, 노션을 통해 소통하고 회의록을 기록하며 개발 진도를 공유함.
-
-- 개발 팀원들의 역할을 분배하고 작업 효율을 위해 <b>Unity Version Control</b>을 구축하여 프로젝트를 관리함.
-
-- Unity Version Control에 개발한 파트를 커밋 시 작성하는 문구에 대한 규칙을 통일함.
+- Unity Version Control에 프로젝트 커밋 시 작성하는 문구에 대한 규칙을 통일함.
 
 - 게임 내 로그인 창, 플레이어 선택, 스토리에 따른 지도창 선택 등의 UI를 구현함.
 
