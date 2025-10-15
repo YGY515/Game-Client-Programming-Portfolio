@@ -25,7 +25,7 @@
  
  > 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-1) <br>
  > 📖 [스토리](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EC%8A%A4%ED%86%A0%EB%A6%AC) <br>
- > ✏️ [느낀 점과 회고](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8A%90%EB%82%80-%EC%A0%90%EA%B3%BC-%ED%9A%8C%EA%B3%A0) <br>
+ > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%8A%90%EB%82%80-%EC%A0%90%EA%B3%BC-%ED%9A%8C%EA%B3%A0) <br>
  > 🔨 [담당 역할](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EC%97%AD%ED%95%A0) <br>
  > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-1) <br>
  > ✨ [피드백 반영 및 개선 과정](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%BC%EB%93%9C%EB%B0%B1-%EB%B0%98%EC%98%81-%EB%B0%8F-%EA%B0%9C%EC%84%A0-%EA%B3%BC%EC%A0%95) <br>
@@ -40,7 +40,7 @@
 > 🎯 [핵심 특징](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%95%B5%EC%8B%AC-%ED%8A%B9%EC%A7%95-1) <br>
 > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-1) <br>
 > 🔨 [담당 구현](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EA%B5%AC%ED%98%84-1) <br>
-> 🛠️ [문제 해결 경험](https://github.com/Mekdlsdl/Game-Client-Programmer-Portfolio/blob/main/DETAIL.md#-%EC%BD%94%EB%93%9C-%EC%83%98%ED%94%8C-2) <br>
+> 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/edit/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-2) <br>
       </a>
       </td>
           <td valign="top">
@@ -78,11 +78,13 @@
     
 ## 📝 게임 소개
 
-코드: 안티데시스 리빌드는 이전에 출시한 게임 [코드: 안티데시스](링크 예시)의 핵심 콘텐츠인<br>
-후반부 보스전을 Unity 2D로 <b>리빌드</b>한 프로젝트 입니다.<br>
+코드: 안티데시스 리빌드는 이전에 출시한 게임 [코드: 안티데시스](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)의 핵심 콘텐츠인<br>
+후반부 보스전을 Unity 2D로 <b>재구성</b>한 프로젝트 입니다.<br>
 
-원본 게임에서 <b>무기 추가와 교체, 보스의 HP 표시, 데미지 숫자와 치명타 표시 연출</b>과 같은 기능을 더해<br>
-플레이 경험을 확장하고, 좀 더 전략적인 플레이를 할 수 있도록 하는 것을 목표로 합니다.<br>
+원본 엔진로 구현했던 보스전의 구조적 한계를 느껴 확장성 높은 구조를 제작하기 위해 Unity 3D 환경에서 재구성하게 되었습니다.<br><br>
+
+원본 게임에서 무기 추가와 교체, 보스의 HP 표시, 데미지 숫자와 치명타 표시 연출과 같은 기능을 더해<br>
+플레이 경험을 확장하고, <b>코드 구조화</b>와 <b>유지보수성 개선</b>을 목표로 했습니다.
 
 또한 <b>매주 개발 일지를 작성</b>해 보며 제작 진도를 나간 것과 발생한 오류에 대한 대처를 기록하여 프로젝트를 되돌아보았습니다.<br>
 ([제작 일지 1주차](https://sicarope-dev.tistory.com/82), [마지막 주차](https://sicarope-dev.tistory.com/91))
@@ -255,13 +257,14 @@
 
 <br>
 
-## ✏️ 느낀 점과 회고
+## ✅ 프로젝트에서 얻은 것
 
 - 플레이어의 관점에서 <b>즐겁고 매력적인 경험을 제공하는 게임</b>을 목표로 개발해야겠다는 결심을 굳혔음.
 
 - 결과로 받은 피드백을 지속적으로 패치하는 과정을 겪으며, <b>결과 또한 과정의 일부가 될 수 있음을 깨달았음.</b>
 
-- 출시하기 전까지 도와주신 분들을 엔딩 크레딧에 기재할 때가 제일 뿌듯했음. 제작에 도움을 주신 분들에게 영원히 고마움을 표할 수 있음에 감사했음.
+- 보스 패턴 설계 시 상태를 정의하고 구현하기가 쉽지 않아 <b>FSM 설계</b>의 중요성을 체감했음.
+  이후 리빌드 프로젝트에서 FSM 구조를 직접 설계해 보며 이 개념을 체득할 수 있었음.
 
 <br>
 
@@ -496,7 +499,7 @@ urban fantasy 등의 키워드를 활용함)
 - 디자이너와의 협업과 여러 대처 문제를 경험해 보며 <b>커뮤니케이션 역량</b>을 기를 수 있었음.<br>
 당시 UI 이미지 및 맵 배치의 수정 요청이 빈번했으나 당시 출시 일정이 촉박해 모든 디자인 요청을 즉시 반영하기 어려웠음.<br><br>
 따라서 디자인 완성도가 사용자 경험에 미치는 영향을 고려하여,<br> UI 수정을 먼저 처리하고 비교적 긴급하지 않은 사항은 기능 구현이 완료된 후 적용하기로 디자인 팀과 협의함.<br>
-프로젝트 전반을 고려한 <b>우선순위 조율</b>이 중요하다는 것을 배우게 되었음.<br>
+프로젝트 전반을 고려한 <b>우선순위 조율</b>이 중요하다는 것을 배우게 되었음.<br><br>
 
 - <b>개발 일지</b>를 작성하는 습관을 기를 수 있었음.<br>
 매일 근무 일지를 작성하며 당일 해결한 문제, 내일 구현해야 할 기능, 팀원으로부터 수렴한 피드백을 기록함.<br>
@@ -616,11 +619,75 @@ PlayTale은 바보 온달과 평강공주 이야기를 보여주며 미니게임
 
 - 팀장으로서 디자인 팀과 디스코드, 피그마, 노션을 통해 소통하고 회의록을 기록하며 개발 진도를 공유함.
 
-- 개발 팀원들의 역할을 분배하고 작업 효율을 위해 <b>Unity Verson Control</b>을 구축하여 프로젝트를 관리함.
+- 개발 팀원들의 역할을 분배하고 작업 효율을 위해 <b>Unity Version Control</b>을 구축하여 프로젝트를 관리함.
+
+- Unity Version Control에 프로젝트 커밋 시 문구
+<br>
+
+**<배우게 된 점>**
+
+- 오브젝트의 이동 문제를 해결하기 위해 때로는 특정 축 값을 고정하는 방법으로도 해결할 수 있음을 배우게 됨.
+  
+- <b>렌더링 파이프라인</b>에서 월드 스페이스와 카메라 스페이스 변환 과정을 이해하게 되는 계기가 됨.
+
+
+<br><br>
+
+---
+
+<br><br>
+
+
+# 4. PlayTale
+<img align='right' img width="45%" src="https://github.com/user-attachments/assets/fd152cb9-ebb5-48c7-a7b0-bc5b4e6f9166" />
+바보 온달과 평강공주 스토리를 전달하고 미니게임이 진행되는 콘텐츠<br><br>
+
+
+- <b>시연 영상</b>: [PlayTale](https://youtu.be/-mlkDAKG7YU?si=UaDL4Ykx6hD2Ejil)
+
+- <b>장르 및 개발 인원</b>: 스토리+미니게임 / 9명
+
+- <b>개발 기간</b>: 2023. 4 ~ 2024. 11
+
+- <b>개발 환경</b>
+
+  - <b>언어</b>: C#
+  - <b>엔진</b>: Unity 3D
+
+<br>
+    
+## 📝 게임 소개
+
+PlayTale은 바보 온달과 평강공주 이야기를 보여주며 미니게임이 진행되는 콘텐츠입니다.<br>
+
+졸업 작품으로 <b>팀장</b>을 맡아 타 대학 디자인팀 4명과 개발팀 5명을 이끌어 8개월간 진행한 프로젝트입니다.<br>
+제작년 4월부터 11월까지 약 8개월 동안 제작했으며, 졸업 작품 전시에서 <b>수상</b>하였습니다.<br>
+
+<br>
+
+## ✅ 프로젝트에서 얻은 것
+
+- <b>디자이너의 입장에서 이해하기 쉽도록</b> 피드백을 전달하는 경험을 쌓을 수 있었음.
+
+  예시1) Unity의 UI 구조를 설명해야 하는 경우가 있었는데,<br> 이때 Unity의 UI 계층은 포토샵의 레이어와 다르게 아래 오브젝트일수록 상위에 표시됨을 설명함.
+
+  예시2) 일부 모델링은 발판의 위치가 이상했는데, 디자이너의 입장에서 고려해<br> 블렌더에서 모델링 발판의 위치를 (0, 0, 0)에 조절해 달라는 피드백을 전달함.
+
+- 이러한 피드백이 여러 번 전달된 뒤에는 매주 한 번 진행된 회의가 <b>2주에 한 번</b>으로 진행되어도 충분할 정도로 효율화가 이루어짐.
+
+- 협업에서 배운 경험을 토대로 대규모 프로젝트 참여 시 팀의 커뮤니케이션에 기여하고자 함.
+
+<br>
+
+## 📖 담당 역할
+
+- 팀장으로서 디자인 팀과 디스코드, 피그마, 노션을 통해 소통하고 회의록을 기록하며 개발 진도를 공유함.
+
+- 개발 팀원들의 역할을 분배하고 작업 효율을 위해 <b>Unity Version Control</b>을 구축하여 프로젝트를 관리함.
+
+- Unity Version Control에 개발한 파트를 커밋 시 작성하는 문구에 대한 규칙을 통일함.
 
 - 게임 내 로그인 창, 플레이어 선택, 스토리에 따른 지도창 선택 등의 UI를 구현함.
-
-- 캡스톤 강의 발표와 전시회 발표를 담당함.
 
 <br><br>
 
