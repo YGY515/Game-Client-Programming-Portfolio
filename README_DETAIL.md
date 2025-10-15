@@ -40,7 +40,7 @@
 > 🎯 [핵심 특징](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%95%B5%EC%8B%AC-%ED%8A%B9%EC%A7%95-1) <br>
 > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-1) <br>
 > 🔨 [담당 구현](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EA%B5%AC%ED%98%84-1) <br>
-> 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/edit/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-2) <br>
+> 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-2) <br>
       </a>
       </td>
           <td valign="top">
