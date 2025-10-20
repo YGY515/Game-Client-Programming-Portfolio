@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class NpcController : MonoBehaviour
@@ -13,9 +12,8 @@ public class NpcController : MonoBehaviour
     public GameObject NpcDialogue;
 
 
-    void Start()
+    void Awake()
     {
-        
         if (anim != null)
             anim.SetFloat("Looking", 0.33f);    // 시작 시 좌측 바라보기
     }
