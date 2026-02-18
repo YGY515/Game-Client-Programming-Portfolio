@@ -15,16 +15,15 @@ public class Gun : MonoBehaviour, IWeapon
     public WeaponData weaponData;
 
 
-
     void OnDrawGizmosSelected()
     {
-        // æ¿ ∫‰ø°º≠ ±‚¡Ó∏∑Œ √— π¸¿ß ∫∏¿Ã∞‘
+        // Ïî¨ Î∑∞ÏóêÏÑú Í∏∞Ï¶àÎ™®Î°ú Ï¥ù Î≤îÏúÑ Î≥¥Ïù¥Í≤å
         Gizmos.color = new Color(1f, 0.5f, 0f, 0.3f); 
         Gizmos.DrawWireSphere(transform.position, weaponData.bulletRange);
-
+        
         Vector3 origin = transform.position;
-
         int dir = 0;
+        
         if (playerAnimator != null)
         {
             float looking = playerAnimator.GetFloat("Looking");
@@ -47,8 +46,8 @@ public class Gun : MonoBehaviour, IWeapon
         float halfAngle = weaponData.bulletAngle * 0.5f;
         float startAngle = -halfAngle;
         float deltaAngle = weaponData.bulletAngle / segments;
-
         Vector3 prevPoint = origin + Quaternion.Euler(0, 0, startAngle) * forward * weaponData.bulletRange;
+        
         for (int i = 1; i <= segments; i++)
         {
             float currAngle = startAngle + deltaAngle * i;
@@ -59,11 +58,12 @@ public class Gun : MonoBehaviour, IWeapon
             prevPoint = nextPoint;
         }
     }
+    
     public void Attack()
     {
         if (playerAnimator == null)
         {
-            Debug.LogError("playerAnimator∞° «“¥Á « ø‰");
+            Debug.LogError("Need to assign playerAnimator");
             return;
         }
 
@@ -103,10 +103,9 @@ public class Gun : MonoBehaviour, IWeapon
             gunTransform.localScale = new Vector3(0.7f, 0.7f, 0); 
             startRot = Quaternion.Euler(0, 0, startZ[dir] - 15f);
             endRot = Quaternion.Euler(0, 0, startZ[dir] + 15f);
-            }
+        }
 
-            playerAnimator.gameObject.GetComponent<MonoBehaviour>()
-            .StartCoroutine(GunRecoilRoutine(gunTransform, startRot, endRot, 0.03f, dir));
+        playerAnimator.gameObject.GetComponent<MonoBehaviour>().StartCoroutine(GunRecoilRoutine(gunTransform, startRot, endRot, 0.03f, dir));
     }
 
     IEnumerator GunRecoilRoutine(Transform target, Quaternion from, Quaternion to, float duration, int dir)
@@ -122,7 +121,6 @@ public class Gun : MonoBehaviour, IWeapon
         target.localRotation = to;
         if (shootClip != null && audioSource != null)
             audioSource.PlayOneShot(shootClip);
-
 
         BulletAttack(dir);
 
@@ -150,19 +148,14 @@ public class Gun : MonoBehaviour, IWeapon
 
             if (angle <= weaponData.bulletAngle / 2f)
             {
-                bool isCritical = Random.value < 0.3f; // ƒ°∏Ì≈∏ 30∆€
-                int Damage = isCritical ? 30 : Random.Range(20, 29); // ƒ°∏Ì≈∏∏È ∞¯∞›∑¬ 30, æ∆¥œ∏È 20~29 ªÁ¿Ã
-
-                Debug.Log("∫∏Ω∫∞° ∏¬¥¬¡ﬂ");
+                bool isCritical = Random.value < 0.3f;                 // ÏπòÎ™ÖÌÉÄ 30Ìçº ÌôïÎ•†Î°ú Î∞úÎèô
+                int Damage = isCritical ? 30 : Random.Range(20, 29);   // ÏπòÎ™ÖÌÉÄÎ©¥ Í≥µÍ≤©Î†• 30, ÏïÑÎãàÎ©¥ 20~29 ÏÇ¨Ïù¥
                 bossHealth.BossTakeDamage(Damage);
 
                 DamageTextManager.Instance.ShowDamage(
                     boss.transform.position, Damage, isCritical
-
                 );
             }
         }
     }
 }
-
-  
