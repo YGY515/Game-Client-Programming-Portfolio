@@ -22,16 +22,12 @@ public class Baton : MonoBehaviour, IWeapon
     {
         if ((other.CompareTag("Boss")) && (!sheildObject.activeSelf))
         {
-
             bool isCritical = Random.value < 0.3f; 
-            int Damage = isCritical ? 25 : Random.Range(15, 24); // Ä¡¸íÅ¸¸é 30 µ¥¹ÌÁö, ¾Æ´Ï¸é ÀÏ¹Ý
-
-            Debug.Log("º¸½º°¡ ¸Â´ÂÁß");
+            int Damage = isCritical ? 25 : Random.Range(15, 24); // ì¹˜ëª…íƒ€ë©´ 30 ë°ë¯¸ì§€, ì•„ë‹ˆë©´ ì¼ë°˜
             bossHealth.BossTakeDamage(Damage);
 
             DamageTextManager.Instance.ShowDamage(
                 boss.transform.position, Damage, isCritical
-
             );
         }
 
@@ -47,43 +43,38 @@ public class Baton : MonoBehaviour, IWeapon
                 playerDialogue.SetActive(true);
             }
         }
-
     }
-
 
     public void Attack()
     {
-
         if (playerAnimator == null)
         {
-            Debug.LogError("playerAnimator°¡ ÇÒ´çµÇÁö ¾ÊÀ½");
+            Debug.LogError("Need to assign playerAnimator");
             return;
         }
 
-
         float looking = playerAnimator.GetFloat("Looking");
-
         int dir = 0;
+        
         if (Mathf.Approximately(looking, 0.00f))
-            dir = 0; // ¾Æ·¡
+            dir = 0; // ì•„ëž˜
         else if (Mathf.Approximately(looking, 1.00f))
-            dir = 1; // À§
+            dir = 1; // ìœ„
         else if (Mathf.Approximately(looking, 0.33f))
-            dir = 2; // ¿ÞÂÊ
+            dir = 2; // ì™¼ìª½
         else if (Mathf.Approximately(looking, 0.66f))
-            dir = 3; // ¿À¸¥ÂÊ
+            dir = 3; // ì˜¤ë¥¸ìª½
         else
-            dir = 0; // ±âº»°ª(¾Æ·¡)
-
+            dir = 0; // ê¸°ë³¸ê°’(ì•„ëž˜)
 
         Vector3[] positions = {
-        new Vector3(0, -0.5f, 0),       // ¾Æ·¡
-        new Vector3(0, 0.4f, 0),        // À§
-        new Vector3(-0.2f, -0.3f, 0),   // ¿ÞÂÊ
-        new Vector3(0.3f, -0.2f, 0)     // ¿À¸¥ÂÊ
+        new Vector3(0, -0.5f, 0),       // ì•„ëž˜
+        new Vector3(0, 0.4f, 0),        // ìœ„
+        new Vector3(-0.2f, -0.3f, 0),   // ì™¼ìª½
+        new Vector3(0.3f, -0.2f, 0)     // ì˜¤ë¥¸ìª½
     };
 
-        float[] startZ = { -100f, 100f, -180f, -20f }; // ¾Æ·¡, À§, ¿ÞÂÊ, ¿À¸¥ÂÊ
+        float[] startZ = { -100f, 100f, -180f, -20f }; // ì•„ëž˜, ìœ„, ì™¼ìª½, ì˜¤ë¥¸ìª½
 
         batonTransform.gameObject.SetActive(true);
         batonTransform.localPosition = positions[dir];
@@ -104,9 +95,9 @@ public class Baton : MonoBehaviour, IWeapon
             elapsed += Time.deltaTime;
             yield return null;
         }
+        
         if(swingClip != null && audioSource != null)
             audioSource.PlayOneShot(swingClip);
-
         target.localRotation = to;
         target.gameObject.SetActive(false);
     }
