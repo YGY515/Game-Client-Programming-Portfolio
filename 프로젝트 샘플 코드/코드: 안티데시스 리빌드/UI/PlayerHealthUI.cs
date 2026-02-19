@@ -6,7 +6,6 @@ using UnityEngine;
 public class PlayerHealthUI : MonoBehaviour
 {
     [SerializeField] private PlayerHealth status;
-
     public GameObject heart0;
     public GameObject heart1;
     public GameObject heart2;
@@ -18,6 +17,7 @@ public class PlayerHealthUI : MonoBehaviour
         {
             status = FindObjectOfType<PlayerHealth>();
         }
+        
         status.HealthChange += UpdateHealth;
     }
 
@@ -33,7 +33,6 @@ public class PlayerHealthUI : MonoBehaviour
         heart2.SetActive(false);
         heart3.SetActive(false);
 
-        
         switch (currentHealth)
         {
             case 3:
