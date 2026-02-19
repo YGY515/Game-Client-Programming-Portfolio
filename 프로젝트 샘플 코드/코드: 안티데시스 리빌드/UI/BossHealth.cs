@@ -12,18 +12,16 @@ public class BossHealth : MonoBehaviour
 
     public event Action<int> BossHealthChange;
     public event Action BossHealthPhase;
-
-    private int currentHealth;
     public int MaxHealth => bossData.maxHealth;
     public int CurrentHealth => currentHealth;
 
+    private int currentHealth;
+    private Coroutine hitCoroutine;
 
     void Awake()
     {
         currentHealth = bossData.maxHealth;
     }
-
-    private Coroutine hitCoroutine;
 
     public void BossTakeDamage(int damage)
     {
@@ -35,8 +33,7 @@ public class BossHealth : MonoBehaviour
         if (Boss_audioSource != null && Boss_hitClip != null)
             Boss_audioSource.PlayOneShot(Boss_hitClip);
 
-
-        // Ω∫«¡∂Û¿Ã∆Æ ±Ù∫˝¿Ã±‚ ¡ﬂ∫π πÊ¡ˆ
+        // Ïä§ÌîÑÎùºÏù¥Ìä∏ ÍπúÎπ°Ïù¥Í∏∞ Ï§ëÎ≥µ Î∞©ÏßÄ
         if (Boss_spriteRenderer != null)
         {
             if (hitCoroutine != null)
@@ -51,22 +48,21 @@ public class BossHealth : MonoBehaviour
         {
             BossHealthPhase?.Invoke();
         }
-
     }
 
     private IEnumerator BossHitEffect()
     {
         Color originalColor = Boss_spriteRenderer.color;
         Boss_spriteRenderer.color = Boss_hitColor;
-
         float elapsed = 0f;
+        
         while (elapsed < bossData.Boss_hitColorDuration)
         {
             Boss_spriteRenderer.color = Color.Lerp(Boss_hitColor, originalColor, elapsed / bossData.Boss_hitColorDuration);
             elapsed += Time.deltaTime;
             yield return null;
         }
+        
         Boss_spriteRenderer.color = originalColor;
     }
-
 }
