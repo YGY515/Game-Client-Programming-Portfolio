@@ -15,8 +15,8 @@ public class BossHealthUI : MonoBehaviour
         {
             BossStatus = FindObjectOfType<BossHealth>();
         }
+        
         BossStatus.BossHealthChange += UpdateHealth;
-
         healthBar.maxValue = BossStatus.MaxHealth;
     }
 
@@ -28,12 +28,11 @@ public class BossHealthUI : MonoBehaviour
     void Start()
     {
         healthBar.value = BossStatus.CurrentHealth;
-
     }
 
     void UpdateHealth(int currentHealth)
     {
         healthBar.value = currentHealth;
-        Debug.Log($"HP UI updated: {currentHealth}");
+        // Debug.Log($"HP UI updated: {currentHealth}");
     }
 }
