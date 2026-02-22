@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class NpcController : MonoBehaviour
@@ -11,11 +10,10 @@ public class NpcController : MonoBehaviour
     public GameObject bossShield;
     public GameObject NpcDialogue;
 
-
     void Awake()
     {
         if (anim != null)
-            anim.SetFloat("Looking", 0.33f);    // ½ÃÀÛ ½Ã ÁÂÃø ¹Ù¶óº¸±â
+            anim.SetFloat("Looking", 0.33f);    // ì‹œì‘ ì‹œ ì¢Œì¸¡ ë°”ë¼ë³´ê¸°
     }
 
     void Update()
@@ -30,11 +28,10 @@ public class NpcController : MonoBehaviour
             float dist = Vector2.Distance(transform.position, player.position);
             if (dist <= interactDistance && Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("NPC¿Í »óÈ£ÀÛ¿ë ½ÃÀÛ");
+                Debug.Log("NPCì™€ ìƒí˜¸ì‘ìš© ì‹œì‘");
                 anim.SetFloat("Looking", 0.66f);
                 NpcDialogue.SetActive(true);
                 OnPhaseChanged(BossPhaseManager.Instance.currentPhase);
-
             }
         }
     }
@@ -54,7 +51,6 @@ public class NpcController : MonoBehaviour
     void EnableEnemyDamage()
     {
         EnemyPoolManager.Instance.EnemyCanBeDamaged = true;
-
         foreach (var enemy in enemies)
         {
             if (enemy != null)
@@ -63,7 +59,4 @@ public class NpcController : MonoBehaviour
             }
         }
     }
-
-
-
 }
