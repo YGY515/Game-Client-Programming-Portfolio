@@ -10,7 +10,7 @@ public class NpcDialogue : MonoBehaviour
     public GameObject timer;
     public EnemySpawner enemySpawner;
     public PlayerHealth playerHealth;
-
+    
     [SerializeField] private TMP_Text npcTextUI;
 
     void OnEnable()
@@ -24,8 +24,7 @@ public class NpcDialogue : MonoBehaviour
 
         int currentPhase = BossPhaseManager.Instance.currentPhase;
 
-
-        // csvÀÇ Çì´õ phase¿Í currentPhase°¡ ÀÏÄ¡ÇÏ´Â ´ë»ç ÃßÃâ
+        // csvì˜ í—¤ë” phaseì™€ currentPhaseê°€ ì¼ì¹˜í•˜ëŠ” ëŒ€ì‚¬ ì¶”ì¶œ
         List<string> linesToUse = new List<string>();
         foreach (var kvp in dialogueReader.npcDialogue)
         {
@@ -34,7 +33,7 @@ public class NpcDialogue : MonoBehaviour
                 linesToUse.Add(dialogue.text);
         }
 
-        // Çì´õ order ±âÁØÀ¸·Î Á¤·Ä
+        // í—¤ë” order ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬
         linesToUse.Sort((a, b) =>
         {
             var orderA = int.Parse(dialogueReader.npcDialogue
@@ -47,15 +46,13 @@ public class NpcDialogue : MonoBehaviour
         });
 
 
-        // ´ëÈ­ Ãâ·Â ½Ã ¿ìÃø ¹Ù¶óº¸±â
+        // ëŒ€í™” ì¶œë ¥ ì‹œ ìš°ì¸¡ ë°”ë¼ë³´ê¸°
         npcAnimation.SetFloat("Looking", 0.66f); 
-
         DialogueManager.Instance.ShowDialogue(linesToUse.ToArray(), npcTextUI, () =>
         {
             if (playerHealth.CurrentHealth == 1)
             {
-
-                // ÇÃ·¹ÀÌ¾î Ã¼·Â 1ÀÏ ¶§ npcÀÇ Æ¯Á¤ ´ë»ç Ãâ·Â
+                // í”Œë ˆì´ì–´ ì²´ë ¥ 1ì¼ ë•Œ npcì˜ íŠ¹ì • ëŒ€ì‚¬ ì¶œë ¥
                 List<string> phase3Lines = new List<string>();
 
                 foreach (var kvp in dialogueReader.npcDialogue)
@@ -64,6 +61,7 @@ public class NpcDialogue : MonoBehaviour
                     if (dialogue.phase == "3")
                         phase3Lines.Add(dialogue.text);
                 }
+                
                 phase3Lines.Sort((a, b) =>
                 {
                     var orderA = int.Parse(dialogueReader.npcDialogue
@@ -77,10 +75,9 @@ public class NpcDialogue : MonoBehaviour
 
                 DialogueManager.Instance.ShowDialogue(phase3Lines.ToArray(), npcTextUI, () =>
                 {
-
-                    // ÇÃ·¹ÀÌ¾î Ã¼·Â 1 È¸º¹
+                    // í”Œë ˆì´ì–´ ì²´ë ¥ 1 íšŒë³µ
                     playerHealth.PlayerHeal(1);
-                    Debug.Log($"ÁÖÀÎ°ø Ã¼·Â È¸º¹, ÇöÀç Ã¼·Â {playerHealth.CurrentHealth}");
+                    Debug.Log($"ì£¼ì¸ê³µ ì²´ë ¥ íšŒë³µ, í˜„ì¬ ì²´ë ¥ {playerHealth.CurrentHealth}");
 
                     timer.SetActive(true);
                     npcAnimation.SetFloat("Looking", 0.33f);
