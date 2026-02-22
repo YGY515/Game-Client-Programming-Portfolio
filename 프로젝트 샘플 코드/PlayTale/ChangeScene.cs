@@ -4,9 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
 //씬 이동하는 함수들 모음
-
 public class ChangeScene : MonoBehaviour 
 {
     public Image image;
@@ -16,7 +14,6 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("Sign_Up");
     }
-
 
     public void LoginChange() // 로그인창 이동
     {
@@ -50,11 +47,7 @@ public class ChangeScene : MonoBehaviour
         Invoke("OndalSceneChange", 4.0f);
     }
 
-
-
-
-    //이하는 맵 이동시 페이드 아웃
-
+    // 이하는 맵 이동시 페이드 아웃
     void OndalSceneChange()
     {
         Loading.SetActive(true);
@@ -82,8 +75,7 @@ public class ChangeScene : MonoBehaviour
             image.color = new Color(0, 0, 0, alpha);
             yield return null;
         }
+        
         Loading.SetActive(true);
     }
 }
-
-
