@@ -5,7 +5,7 @@
 <br>
 
 ### Scene_fix
-- [해상도 문제](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-1)(해당 문제해결 4번)에서 사용되었던 코드로, 지도 UI의 해상도 오류를 수정하는데 사용하였습니다.
+- [해상도 문제](https://github.com/YGY515/YGY-Programming-Portfolio/blob/main/README_DETAIL.md#4-%ED%95%B4%EC%83%81%EB%8F%84-%EC%B6%9C%EB%A0%A5-%EC%98%A4%EB%A5%98)(해당 문제해결 4번)에서 사용되었던 코드로, 지도 UI의 해상도 오류를 수정하는데 사용하였습니다.
 
 ### DisableMouseMove
 - 플레이어 이동을 화면 내 클릭이 아닌 키보드로 하기 위해 사용된 코드입니다.
