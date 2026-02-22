@@ -16,10 +16,10 @@
 ### Manager
 게임 내 주요 기능을 관리하는 코드입니다.
 - BossPhaseManager: 보스의 페이즈를 관리하고, 필요 시 페이즈를 1단계 올리는 AdvancePhase 함수가 있습니다.
+- CsvReaderManager: csv로 작성된 NPC의 대사를 불러오고, CsvHelper 라이브러리를 이용해 작성한 코드입니다.
 - DamageTextManager: 플레이어가 보스를 공격할 시 출력되는 데미지 숫자를 관리합니다.
-- DialogueManager: NPC와 플레이어의 대사가 한 글자식 따각따각 출력되기 위해 사용한 코드입니다.
+- DialogueManager: NPC와 플레이어의 대사가 한 글자식 출력되기 위해 사용한 코드입니다.
 - EnemyPoolManager: 보스가 페이즈마다 소환하는 하위 몬스터를 풀에 관리하는 코드입니다.
-- TimerManager: 각 페이즈마다 유효한 시간을 관리하고, 이를 게임 화면 가운데 상단에 출력합니다.
 <br>
 
 ### UI
