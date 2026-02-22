@@ -7,12 +7,11 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
-
     public AudioSource audioSource;
     public AudioClip typingClip;
-
     public float typingSpeed = 0.05f;
     public bool isTyping = false;
+    
     private Coroutine typingCoroutine;
 
     void Awake()
@@ -31,7 +30,6 @@ public class DialogueManager : MonoBehaviour
     public void ShowDialogue(string[] lines, TMP_Text targetText, System.Action onFinish = null)
     {
         isTyping = true;
-
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
@@ -48,12 +46,12 @@ public class DialogueManager : MonoBehaviour
             for (int i = 0; i < text.Length; i++)
             {
                 targetText.text += text[i];
-
                 if (i % 2 == 0 && typingClip != null)
                     audioSource.PlayOneShot(typingClip);
-
+                    
                 yield return new WaitForSeconds(typingSpeed);
             }
+            
             yield return new WaitForSeconds(2f);
         }
 
