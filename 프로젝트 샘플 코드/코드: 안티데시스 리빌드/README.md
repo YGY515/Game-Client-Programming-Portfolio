@@ -27,6 +27,7 @@
 - PlayerHealth, BossHealth: 플레이어와 보스의 체력을 담당하고 피격 시 스프라이트가 짧게 붉어지고 원래대로 돌아오도록 합니다.
 - PlayerHealthUI, BossHealthUI: 이벤트 구독을 통해 플레이어와 보스의 체력바를 화면에 표시합니다.
 - PlayerHealthWarning: 플레이어의 체력이 일정 이하로 떨어질 경우 화면에 경고창을 표시합니다.
+- NpcDialogue: CsvReaderManager를 통해 읽어온 Npc의 대사를 출력하는 기능을 수행합니다.
 <br>
 
 ### Weapon
