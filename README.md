@@ -11,7 +11,7 @@
 # 프로젝트 💻
 ## 1. 코드: 안티데시스 리빌드 - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#1-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EB%B9%8C%EB%93%9C)
 > 출시한 게임의 보스전을 Unity 2D로 재구성해보는 프로젝트<br>
-> 2025. 5 ~ 2025. 7 / 이후 프로젝트 최적화와 코드 수정 진행 중
+> 2025. 5 ~ 2025. 7
 ### 사용 기술과 언어
 * Unity 2D (2022.3.58f1), C#
 
