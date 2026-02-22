@@ -2,23 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class PlayerChoose : MonoBehaviour
 {
     int num;
     GameObject Select;
-
     public GameObject girl;
     public GameObject boy;
     public GameObject playerCamera;
 
-
     void Start()
     {
-        
-        Select = GameObject.Find("PlayerSelect");  // ·Îºñ¾À¿¡¼­ °Ç³Ê¿Â ÇÃ·¹ÀÌ¾î ¼ºº° ÂüÁ¶
+        // ë¡œë¹„ì”¬ì—ì„œ ê±´ë„ˆì˜¨ í”Œë ˆì´ì–´ ì„±ë³„ ì°¸ì¡°
+        Select = GameObject.Find("PlayerSelect");
         num = Select.GetComponent<CharacterSelect>().CharacterNumber;
-
     }
 
     void Update()
@@ -28,22 +24,18 @@ public class PlayerChoose : MonoBehaviour
 
     IEnumerator Player()
     {
-        if (num == 1) // ¿©ÀÚÀÏ¶§
+        if (num == 1)    // ì—¬ì í”Œë ˆì´ì–´
         {
             girl.gameObject.SetActive(true);
             boy.gameObject.SetActive(false);
-
-            playerCamera.gameObject.SetActive(true);
         }
-        else if (num == 2) // ³²ÀÚÀÏ¶§
+        else    // ë‚¨ì í”Œë ˆì´ì–´
         { 
-
             boy.gameObject.SetActive(true);
             girl.gameObject.SetActive(false);
-
-            playerCamera.gameObject.SetActive(true);
         }
 
+        playerCamera.gameObject.SetActive(true);
         yield return null;
     }
 }
