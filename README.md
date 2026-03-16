@@ -1,6 +1,7 @@
-# 윤가영 포트폴리오 🎮
+# 윤가영 포트폴리오
 
-1. <b>Unity</b>와 <b>C#</b>을 활용해 모바일 콘텐츠와 게임을 제작한 경험이 있습니다.<br>
+1. <b>C# 기반</b> 애플리케이션과 게임을 개발한 경험이 있습니다.<br>
+<b>Unity</b>를 활용해 모바일 콘텐츠 및 게임을 개발하고, <b>.NET 기반 Windows 프로그램</b>을 구현하며 C#을 활용한 개발 경험을 쌓았습니다.<br>
 다양한 플랫폼 환경에서(Android, iOS, Steam) <b>게임 출시</b> 및 사용자 경험을 <b>개선</b>한 경험이 있습니다.<br><br>
 2. 개발 과정에서 비 개발 직군과 <b>원활한 커뮤니케이션</b>을 하는 것을 중요하게 생각합니다.<br><br>
 3. 새로운 기술이나 환경을 흥미롭게 받아들이고, <b>꾸준히 기록하며 학습</b>하는 것을 좋아합니다.<br>
@@ -9,8 +10,23 @@
 <br><br>
 
 # 프로젝트 💻
-## 1. 코드: 안티데시스 리빌드 - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#1-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EB%B9%8C%EB%93%9C)
-> 출시한 게임의 보스전을 Unity 2D로 재구성해보는 프로젝트<br>
+## 1. File Organizer - [상세내용](https://github.com/YGY515/YGY-Programming-Portfolio/blob/main/README_DETAIL.md#1-file-organizer)
+> 폴더 내 파일을 확장자, 날짜, 파일명 언어 기준으로 자동 정리하는 프로그램<br>
+> 2026. 3
+### 사용 언어와 프레임워크
+* C#, .NET 9.0
+
+### 담당 구현
+* 폴더 주소 입출력 구현
+* 파일 정리 기준 구현 - 확장자, 날짜(YYYY-MM), 파일명 언어
+* 기준에 따른 폴더 생성과 파일 분류 구현
+* 완료 후 정리된 파일 수와 생성된 폴더 수 출력
+* Window GUI 환경에서 사용 가능하도록 사용자 인터페이스 연결
+
+<br>
+
+## 2. 코드: 안티데시스 리빌드 - [상세내용](https://github.com/YGY515/YGY-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EB%B9%8C%EB%93%9C)
+> 출시한 게임을 Unity로 일부 재구성해보는 프로젝트<br>
 > 2025. 5 ~ 2025. 7
 ### 사용 기술과 언어
 * Unity 2D (2022.3.58f1), C#
@@ -24,7 +40,7 @@
 
 <br>
 
-## 2. 코드: 안티데시스 - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)
+## 3. 코드: 안티데시스 - [상세내용](https://github.com/YGY515/YGY-Programming-Portfolio/blob/main/README_DETAIL.md#3-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)
 > 스토리 위주의 액션 어드벤처와 비주얼 노벨 요소를 가미한 게임 개발 프로젝트<br>
 > 2024. 5 ~ 2024. 12 / 스팀과 스토브 데모 출시
 ### 사용 기술과 언어
@@ -38,7 +54,7 @@
 
 <br>
 
-## 3. 플레이테일 박씨전 - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#3-%ED%94%8C%EB%A0%88%EC%9D%B4%ED%85%8C%EC%9D%BC-%EB%B0%95%EC%94%A8%EC%A0%84)
+## 4. 플레이테일 박씨전 - [상세내용](https://github.com/YGY515/YGY-Programming-Portfolio/blob/main/README_DETAIL.md#4-%ED%94%8C%EB%A0%88%EC%9D%B4%ED%85%8C%EC%9D%BC-%EB%B0%95%EC%94%A8%EC%A0%84)
 > 전래동화 박씨전의 이야기를 전달하고 미니게임을 통해 스토리를 진행하는 프로젝트<br>
 > 2023. 7 ~ 2023. 9 / 모바일앱개발협동조합 인턴 / Android와 iOS 출시
 ### 사용 기술과 언어
@@ -49,18 +65,3 @@
 * 미니게임 로직 구현 (요리 만들기, 스토리라인 퍼즐 맞추기)
 * 시네머신을 통한 컷씬 구현 경험
 * Android 빌드와 XCode 빌드를 통한 출시 경험
-
-<br>
-
-## 4. PlayTale - [상세내용](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#4-playtale)
-> 바보 온달과 평강공주 이야기를 바탕으로 스토리를 전달하고 미니게임이 진행되는 콘텐츠<br>
-> 2023. 4 ~ 2023. 11 / 졸업 작품 캡스톤
-### 사용 기술과 언어
-* Unity 3D (2021.3.21f1), C#
-
-### 담당 부분과 경험
-* 팀장을 맡아 개발팀 5명과 디자인팀 4명을 이끈 경험
-* 개발 팀원들의 역할을 분배하고 작업 효율을 위해 Unity Verson Control을 구축하여 프로젝트를 관리한 경험
-* 디자인 팀과 디스코드, 피그마, 노션을 통해 소통하고 개발 진도를 공유한 경험
-* UI 구현 (로그인, 플레이어 선택, 스토리 맵 지도 등) 
-* 캡스톤 중간 발표와 전시회 발표 담당
