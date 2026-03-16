@@ -1,4 +1,4 @@
-# 윤가영 포트폴리오
+# 윤가영 포트폴리오- [상세내용](https://github.com/YGY515/YGY-Programming-Portfolio/blob/main/README_DETAIL.md)
 
 1. <b>C# 기반</b> 애플리케이션과 게임을 개발한 경험이 있습니다.<br>
 <b>Unity</b>를 활용해 모바일 콘텐츠와 게임을 개발하고, <b>.NET 기반 Windows 프로그램</b>을 구현하며 C# 개발 경험을 쌓았습니다.<br>
