@@ -1,4 +1,4 @@
-# 윤가영 포트폴리오 🎮
+# 윤가영 포트폴리오
 본 문서는 리드미 항목의 세부사항을 다루고 있습니다.
 <br><br>
 
@@ -10,13 +10,13 @@
       <td valign="top">
        <a>
         
- 🎮 [코드: 안티데시스 리빌드](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#1-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EB%B9%8C%EB%93%9C) <br><br>
- > 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C) <br>
- > 🎯 [핵심 특징](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%95%B5%EC%8B%AC-%ED%8A%B9%EC%A7%95) <br>
- > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83) <br>
- > 🔨 [담당 구현](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EA%B5%AC%ED%98%84) <br>
- > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98) <br>
- > 💻 [코드 샘플](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/%EC%BD%94%EB%93%9C%3A%20%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4%20%EB%A6%AC%EB%B9%8C%EB%93%9C)
+ 📑 [File Organizer](https://github.com/YGY515/YGY-Programming-Portfolio/edit/main/README_DETAIL.md#1-file-organizer) <br><br>
+ > 📝 [프로젝트 소개](https://github.com/YGY515/YGY-Programming-Portfolio/edit/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C) <br>
+ > 🎯 [핵심 특징](https://github.com/YGY515/YGY-Programming-Portfolio/edit/main/README_DETAIL.md#-%ED%95%B5%EC%8B%AC-%ED%8A%B9%EC%A7%95) <br>
+ > 🔎 [프로젝트 구조](https://github.com/YGY515/YGY-Programming-Portfolio/edit/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%A1%B0) <br>
+ > 🔨 [담당 구현](https://github.com/YGY515/YGY-Programming-Portfolio/edit/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EA%B5%AC%ED%98%84) <br>
+ > 🛠️ [문제 해결 경험](https://github.com/YGY515/YGY-Programming-Portfolio/edit/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98) <br>
+ > 💻 [코드 샘플](https://github.com/YGY515/YGY-Programming-Portfolio/edit/main/README_DETAIL.md#-%EC%BD%94%EB%93%9C-%EC%83%98%ED%94%8C)
        </a>
       </td>
           <td valign="top">
@@ -34,31 +34,212 @@
       </td>
             <td valign="top">
       <a>
-      📖 [플레이테일 박씨전](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#3-%ED%94%8C%EB%A0%88%EC%9D%B4%ED%85%8C%EC%9D%BC-%EB%B0%95%EC%94%A8%EC%A0%84) <br><br>
+       🎮 [코드: 안티데시스](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4) <br><br>
+ 
+ > 📝 [프로젝트 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-1) <br>
+ > 📖 [스토리](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EC%8A%A4%ED%86%A0%EB%A6%AC) <br>
+ > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-1) <br>
+ > 🔨 [담당 역할](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EC%97%AD%ED%95%A0) <br>
+ > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-1) <br>
+ > ✨ [피드백 반영 및 개선 과정](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%BC%EB%93%9C%EB%B0%B1-%EB%B0%98%EC%98%81-%EB%B0%8F-%EA%B0%9C%EC%84%A0-%EA%B3%BC%EC%A0%95) <br>
+ > 💻 [코드 샘플](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/%EC%BD%94%EB%93%9C%3A%20%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)
+       </a>
+      </td>
+          <td valign="top">
+         <a>
+     📖 [플레이테일 박씨전](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#3-%ED%94%8C%EB%A0%88%EC%9D%B4%ED%85%8C%EC%9D%BC-%EB%B0%95%EC%94%A8%EC%A0%84) <br><br>
 
-> 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-2) <br>
+> 📝 [프로젝트 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-2) <br>
 > 🎯 [핵심 특징](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%95%B5%EC%8B%AC-%ED%8A%B9%EC%A7%95-1) <br>
 > ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-1) <br>
 > 🔨 [담당 구현](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EA%B5%AC%ED%98%84-1) <br>
 > 🛠️ [문제 해결 경험](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#%EF%B8%8F-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EA%B2%BD%ED%97%98-2) <br>
-      </a>
+        </a>
       </td>
-          <td valign="top">
-     <a>
-     🕹️ [PlayTale](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#4-playTale) <br><br>
-
-> 📝 [게임 소개](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EA%B2%8C%EC%9E%84-%EC%86%8C%EA%B0%9C-3) <br>
-> ✅ [프로젝트에서 얻은 것](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%96%BB%EC%9D%80-%EA%B2%83-2) <br>
-> 🔨 [담당 역할](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#-%EB%8B%B4%EB%8B%B9-%EC%97%AD%ED%95%A0-1) <br>
-> 💻 [코드 샘플](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/PlayTale) <br>
-</a></td>
     </tr>
   </tbody>
 </table>
 
 
 <br><br>
-# 1. 코드: 안티데시스 리빌드
+# 1. File Organizer
+<img align='right' img width="47%" src="https://github.com/user-attachments/assets/a09b9238-d63a-47c8-be23-bf592e8bf851" />
+폴더 내 파일을 확장자, 날짜, 파일명 언어 기준으로 자동 정리하는 프로그램<br><br>
+
+
+- <b>시연 영상</b>: [File Organizer](https://youtu.be/7ctBmCC3JPA)
+
+- <b>개발 인원</b>: 1명
+
+- <b>개발 기간</b>: 2026. 3
+
+- <b>개발 환경</b>
+
+  - <b>언어 및 프레임워크</b>: C# / .NET 9.0
+  - <b>개발 도구</b>: Visual Studio 2022
+  - <b>타겟 플랫폼</b>: WPF
+
+    <br>
+    
+## 📝 프로젝트 소개
+
+File Organizer는 폴더 내 파일을 확장자, 날짜, 파일명 언어에 따라 <b>자동으로 정리하는</b> 프로그램입니다.<br>
+
+평소 사진 앨범을 정리하던 도중, 매번 사진과 폴더를 분류하기가 번거로워 이를 어떻게 해결할지에 대한 고민에서 시작되었습니다.<br><br>
+
+
+프로젝트는 Core와 WPF 두 개의 솔루션으로 분리하여 설계했습니다.
+
+* <b>Core 솔루션</b>
+파일 정리의 핵심 로직을 담당하며 콘솔 환경에서 동작합니다.
+
+* <b>WPF 솔루션</b>
+Core 기능을 그대로 활용하면서 Windows GUI 환경에서 사용할 수 있도록 사용자 인터페이스를 구현했습니다.
+ 
+
+<br>
+
+## 🎯 핵심 특징
+
+- <b>정리 기준 선택</b>: 사용자는 파일 확장자, 날짜(YYYY-MM), 파일명 언어 세 가지 기준 중 하나를 선택할 수 있습니다.  
+  
+- <b>폴더 선택 후 파일 자동 정리</b>: Window 탐색기에서 정리할 폴더를 선택하면,<br> 프로그램이 폴더 내 파일을 분석하여 기준에 맞는 폴더를 생성 후 파일을 자동으로 분류합니다.
+  
+- <b>결과 메세지 표시</b>: 정리가 완료되면 정리된 파일 수와 생성된 폴더 수를 표시하며, 정리된 폴더를 탐색기에서 바로 열어볼 수 있는 옵션을 제공합니다.
+
+
+<br>
+
+## 🔎 프로젝트의 구조
+```mermaid
+graph TD
+    subgraph "FileOrganization_WPF"
+        XAML[FileOrganization.xaml]
+        CS[FileOrganizaiton.xaml.cs]
+    end
+
+    subgraph "FileOrganization_Core"
+        Prog[Program.cs]
+        Base[FileOrganizer_Base.cs - Abstract Class]
+        
+        subgraph "Organization Folder"
+            Date[Date.cs]
+            Ext[Extension.cs]
+            Lang[Language.cs]
+        end
+    end
+
+    XAML --> CS
+    CS --> Base
+
+    Prog --> Base
+
+    Base --> Date
+    Base --> Ext
+    Base --> Lang
+```
+### 1) FileOrganization_Core
+
+<b>파일 정리의 핵심 로직을 담당하는 콘솔 기반 프로그램입니다.</b><br>
+사용자가 입력한 폴더 경로와 정리 기준을 바탕으로 파일을 분석하고, 기준에 따라 폴더를 생성한 뒤 파일을 이동시킵니다.<br>
+
+FileOrganizer_Base 추상 클래스를 중심으로 공통적인 파일 정리 기능을 정의하고,<br>
+Organization 폴더의 각 클래스에서 정리 기준에 따른 세부 내용을 구현했습니다.<br>
+
+정리 기준이 추가되더라도 새로운 클래스를 작성하여 쉽게 <b>확장</b>할 수 있도록 설계했습니다.<br>
+<br>
+
+### 2) FileOrganization_WPF
+
+<b>Core의 기능을 손쉽게 Windows GUI 환경에서 사용할 수 있도록 확장한 프로그램입니다.</b>
+
+* 폴더 선택
+* 정리 기준 선택(라디오 버튼)
+* 정리 결과 확인
+* 정리된 폴더 탐색기 열기
+
+등의 UI를 제공하며, 실제 프로그램 로직은 FileOrganization_Core의 클래스를 그대로 호출하여 사용합니다.<br>
+
+이를 통해 UI와 핵심 로직을 분리하고 프로그램의 사용의 <b>접근성</b>을 개선했습니다.<br>
+
+
+<br><br>
+
+## 🔨 담당 구현
+### 1) 정리 기준 처리
+
+- 파일을 분석하여 정리 기준에 해당하는 값을 추출하고 이를 <b>HashSet<string></b> 자료구조에 저장함.<br>
+  이로써 <b>중복 값을 자동으로 제거하여</b> 동일한 폴더가 여러 번 생성되는 문제를 방지함.
+
+- 확장자 기준의 경우 .png 형태로 저장되기 때문에 폴더 생성 시 문자열에서 . 문자를 제거하여 폴더명을 생성하도록 처리함.
+
+- WPF UI에서는 정리 기준이 동시에 선택되지 않도록 RadioButton을 사용하여 단일 선택 구조로 구현함.
+
+<br>
+
+### 2) WPF 기반 사용자 경험 개선
+
+- Core 버전은 콘솔 환경에서 동작하기 때문에 폴더 경로를 직접 입력해야 하는 불편함이 있었음.
+
+- 이를 개선하기 위해 WPF 기반 UI를 구현하여 폴더 탐색기를 통한 폴더 선택, 정리 결과 메시지 표시 등의 기능을 제공함.
+
+<br>
+
+## 🛠️ 문제 해결 경험
+
+### 중복된 메서드 구조 개선
+
+**<문제 상황>**
+
+초기 설계에서는 IFileOrganizer 인터페이스에 다음 메서드를 정의했음.
+```C#
+Organize()
+CollectFiles()
+CreateFolders()
+MoveFiles()
+PrintLog()
+```
+
+이를 각 구현 클래스(Extension, Date, Language)에서 이를 구현했으나, PrintLog() 메서드가 모든 클래스에서 동일한 구조로 반복되고 있었음.
+
+<br>
+
+**<원인 분석>**
+
+- 클래스마다 별도로 구현할 필요가 없는 공통 기능이 인터페이스에 포함되어 있어 중복 코드가 발생함.
+
+<br>
+
+**<해결 방법>**
+
+- 인터페이스 구조를 <b>추상 클래스(FileOrganizer_Base)</b> 구조로 변경함.
+
+- PrintLog() → 부모 클래스에서 공통 구현<br>
+
+- Organize(), CollectFiles(), CreateFolders(), MoveFiles() → 추상 메서드로 선언 후 하위 클래스에서 구현
+
+<br>
+
+**<결과>**
+
+- 공통 기능을 상위 클래스에서 관리하여 중복 코드를 제거하고, 하위 클래스에서는 정리 기준에 따른 로직만 구현하도록 구조를 단순화함.
+  
+- 인터페이스와 추상 클래스의 사용 목적을 비교하며 <b>설계 선택 경험</b>을 얻을 수 있었음.
+
+<br><br>
+
+
+## 💻 코드 샘플
+
+[File Organizer](https://github.com/YGY515/File-Organizer/tree/main/FileOrganization_Core)
+
+
+<br><br>
+
+---
+
+<br><br>
+# 2. 코드: 안티데시스 리빌드
 <img align='right' img width="50%" src="https://github.com/user-attachments/assets/ec597b7a-57a6-421f-a1b3-5277d0b4d5b5" />
 출시한 게임의 보스전을 Unity 2D로 재구성해보는 프로젝트<br><br>
 
@@ -76,7 +257,7 @@
 
     <br>
     
-## 📝 게임 소개
+## 📝 프로젝트 소개
 
 코드: 안티데시스 리빌드는 이전에 출시한 게임 [코드: 안티데시스](https://github.com/YGY515/Game-Client-Programming-Portfolio/blob/main/README_DETAIL.md#2-%EC%BD%94%EB%93%9C-%EC%95%88%ED%8B%B0%EB%8D%B0%EC%8B%9C%EC%8A%A4)의 보스전을 Unity로 재구성해보며<br> <b>코드 구조화</b>와 <b>재사용성</b>을 배우고자 한 프로젝트 입니다.<br><br>
 
@@ -235,7 +416,7 @@
 
 <br><br>
 
-# 2. 코드: 안티데시스
+# 3. 코드: 안티데시스
 <img align='right' img width="45%" src="https://github.com/user-attachments/assets/3bdc96c9-4706-4838-943f-459bd8ffe693" />
 
 스토리 위주의 액션 어드벤처와 비주얼 노벨 요소를 가미한 게임 개발 프로젝트<br><br>
@@ -256,7 +437,7 @@
 
 <br>
     
-## 📝 게임 소개
+## 📝 프로젝트 소개
 
 코드: 안티데시스는 스토리 위주의 액션 어드벤처 및 비주얼 노벨 요소를 가미한 게임입니다.<br>
 
@@ -481,7 +662,7 @@ urban fantasy 등의 키워드를 활용함)
 
 <br><br>
 
-# 3. 플레이테일 박씨전
+# 4. 플레이테일 박씨전
 <img align='right' img width="40%" src= "https://github.com/user-attachments/assets/92fd1cc0-b075-4361-bf7f-0c5d742e078b" />
 전래동화 박씨전의 이야기를 전달하고 미니게임을 통해 스토리를 진행하는 프로젝트<br><br>
 
@@ -501,7 +682,7 @@ urban fantasy 등의 키워드를 활용함)
 
     <br>
     
-## 📝 게임 소개
+## 📝 프로젝트 소개
 
 플레이테일 박씨전은 컷씬과 미니게임을 통해 전래동화 박씨전의 스토리를 진행하는 모바일 콘텐츠 입니다.<br>
 2023년 7월부터 9월까지 ‘모바일앱개발협동조합’에서 인턴으로 현장실습을 하며 <b>3개월</b> 동안 제작하였습니다.<br>
@@ -622,69 +803,3 @@ iOS 빌드를 위해 맥북에 프로젝트를 import 했을 시 모든 오브�
 - 다중 플랫폼 환경에서의 호환성 및 에셋 관리의 중요성을 체감함. <br>MAC과 iOS 환경에서는 <b>Metal API</b>가 사용되기에, 개발한 프로젝트를 옮길 때 엔진 버전 간의 렌더링 호환성 문제가 발생할 수 있음을 깨달음.
 
 - 때로는 Unity 버전 상승과 에셋을 하나씩 재임포트하는 과정이 문제를 해결하는 가장 확실한 방법임을 학습함.
-
-
-<br><br>
-
----
-
-<br><br>
-
-
-# 4. PlayTale
-<img align='right' img width="45%" src="https://github.com/user-attachments/assets/fd152cb9-ebb5-48c7-a7b0-bc5b4e6f9166" />
-바보 온달과 평강공주 스토리를 전달하고 미니게임이 진행되는 콘텐츠<br><br>
-
-
-- <b>시연 영상</b>: [PlayTale](https://youtu.be/-mlkDAKG7YU?si=UaDL4Ykx6hD2Ejil)
-
-- <b>장르 및 개발 인원</b>: 스토리+미니게임 / 9명
-
-- <b>개발 기간</b>: 2023. 4 ~ 2024. 11
-
-- <b>개발 환경</b>
-
-  - <b>언어</b>: C#
-  - <b>엔진</b>: Unity 3D (2022.3.21f1)
-
-<br>
-    
-## 📝 게임 소개
-
-PlayTale은 바보 온달과 평강공주 이야기를 보여주며 미니게임이 진행되는 콘텐츠입니다.<br>
-
-졸업 작품으로 <b>팀장</b>을 맡아 타 대학 디자인팀 4명과 개발팀 5명을 이끌어 8개월간 진행한 프로젝트입니다.<br>
-제작년 4월부터 11월까지 약 8개월 동안 제작했으며, 졸업 작품 전시에서 <b>수상</b>하였습니다.<br>
-
-<br>
-
-## ✅ 프로젝트에서 얻은 것
-
-- <b>디자이너의 입장에서 이해하기 쉽도록</b> 피드백을 전달하는 경험을 쌓을 수 있었음.
-
-  예시1) Unity의 UI 구조를 설명해야 하는 경우가 있었는데,<br> 이때 Unity의 UI 계층은 포토샵의 레이어와 다르게 아래 오브젝트일수록 상위에 표시됨을 설명함.
-
-  예시2) 일부 모델링은 발판의 위치가 이상했는데, 디자이너의 입장에서 고려해<br> 블렌더에서 모델링 발판의 위치를 (0, 0, 0)에 조절해 달라는 피드백을 전달함.<br><br>
-
-- 이러한 피드백이 여러 번 전달된 뒤에는 매주 한 번 진행된 회의가 <b>2주에 한 번</b>으로 진행되어도 충분할 정도로 효율화가 이루어짐.
-
-- 협업에서 배운 경험을 토대로 대규모 프로젝트 참여 시 팀의 커뮤니케이션에 기여하고자 함.
-
-<br>
-
-## 📖 담당 역할
-
-- 팀장으로서 디자인 팀과 디스코드, 피그마, 노션을 통해 소통하고 회의록을 기록하며 개발 진도를 공유함.
-
-- 개발 팀원들의 역할을 분배하고 작업 효율을 위해 <b>Unity Version Control</b>을 구축하여 프로젝트를 관리함.
-
-- Unity Version Control에 프로젝트 커밋 시 작성하는 문구에 대한 규칙을 통일함.
-
-- 게임 내 로그인 창, 플레이어 선택, 스토리에 따른 지도창 선택 등의 UI를 구현함.
-
-<br><br>
-
-
-## 💻 코드 샘플
-
-[PlayTale](https://github.com/YGY515/Game-Client-Programming-Portfolio/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%83%98%ED%94%8C%20%EC%BD%94%EB%93%9C/PlayTale)
