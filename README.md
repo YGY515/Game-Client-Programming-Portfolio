@@ -1,7 +1,7 @@
 # 윤가영 포트폴리오- [상세내용](https://github.com/YGY515/YGY-Programming-Portfolio/blob/main/README_DETAIL.md)
 
 1. <b>C# 기반</b> 애플리케이션과 게임을 개발한 경험이 있습니다.<br>
-<b>.NET 기반 Windows 프로그램</b>을 구현하고, <b>Unity</b>를 활용해 모바일 콘텐츠와 게임을 개발하며 C# 개발 경험을 쌓았습니다.<br>
+<b>.NET 기반 Windows Application</b>을 구현하고, <b>Unity</b>를 활용해 모바일 콘텐츠와 게임을 개발하며 C# 개발 경험을 쌓았습니다.<br>
 다양한 플랫폼 환경에서(Android, iOS, Steam) <b> 출시</b> 및 사용자 경험을 <b>개선</b>한 경험이 있습니다.<br><br>
 2. 개발 과정에서 비 개발 직군과 <b>원활한 커뮤니케이션</b>을 하는 것을 중요하게 생각합니다.<br><br>
 3. 새로운 기술이나 환경을 흥미롭게 받아들이고, <b>꾸준히 기록하며 학습</b>하는 것을 좋아합니다.<br>
