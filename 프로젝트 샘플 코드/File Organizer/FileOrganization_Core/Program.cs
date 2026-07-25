@@ -1,5 +1,6 @@
 using FileOrganization_Core;
 using FileOrganization_Core.Organization;
+using System.Threading.Channels;
 
 class Program
 {
@@ -31,10 +32,26 @@ class Program
         Console.WriteLine("폴더를 정리할 기준을 골라주세요. 확장자 / 날짜 / 언어");
         Console.WriteLine("날짜의 경우, YYYY-MM 기준으로 정리됩니다.");
         Console.WriteLine("언어의 경우, 파일 이름이 한글이면 Korean, 영어면 English로 분류됩니다.");
+        Console.WriteLine("ESC를 누르면 정리를 취소합니다.");
         string mode = Console.ReadLine();
 
         var folders = new List<string>() { path };    // 입력한 경로의 모든 폴더
         folders.AddRange(Directory.GetDirectories(path));
+        CancellationTokenSource cts = new CancellationTokenSource();
+
+        Task.Run(() =>
+        {
+            while(cts.IsCancellationRequested == false)
+            {
+                if (Console.ReadKey(true).Key == ConsoleKey.Escape)
+                {
+                    cts.Cancel();
+                    Console.WriteLine("취소되었습니다.");
+                    break;
+                }    
+            }
+        }
+        );
 
         Parallel.ForEach(folders, folder =>
         {
@@ -46,8 +63,15 @@ class Program
                 "언어" => new Language(),
                 _ => throw new NotImplementedException()
             };
-            string result = organizer.Organize(folder);
-            Console.WriteLine($"[{folder}] {result}");
+            try
+            {
+                string result = organizer.Organize(folder, cts.Token);
+                Console.WriteLine($"[{folder}] {result}");
+            }
+            catch (OperationCanceledException)
+            {
+                Console.WriteLine($"[{folder}] 폴더 정리가 취소되었습니다.");
+            }
         });
     }
 }
