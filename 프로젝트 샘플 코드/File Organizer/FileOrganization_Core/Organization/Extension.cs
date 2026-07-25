@@ -1,20 +1,25 @@
+﻿using System.Threading;
+
 namespace FileOrganization_Core.Organization
 {
     public class Extension : FileOrganizerBase
     {
         string _path = null;
+        object _lock = new object();
         int count = 0;
+
         HashSet<string> fileList = new HashSet<string>();
         List<String> files = new List<string>();
+        List<(string from, string to)> moveLog = new List<(string, string)>();
 
-        public override string Organize(string path)
+        public override string Organize(string path, CancellationToken token)
         {
             _path = path;
             files = Directory.GetFiles(_path).ToList();
 
             CollectFiles();
             CreateFolders();
-            MoveFiles();
+            MoveFiles(token);
             
             return PrintLog(count, fileList.Count);
         }
@@ -38,27 +43,47 @@ namespace FileOrganization_Core.Organization
             }
         }
 
-        public override void MoveFiles()
+        public override void MoveFiles(CancellationToken token)
         {
+            var options = new ParallelOptions { CancellationToken = token };
             SemaphoreSlim semaphore = new SemaphoreSlim(4);
 
-            Parallel.ForEach(files, file =>
+            try
             {
-                semaphore.Wait();
-                try
+                Parallel.ForEach(files, options, file =>
                 {
-                    var info = new FileInfo(file);
-                    string extension = Path.GetExtension(file).Replace(".", "");
-                    string destFolder = Path.Combine(_path, extension);
-                    string destPath = Path.Combine(destFolder, Path.GetFileName(file));
+                    options.CancellationToken.ThrowIfCancellationRequested();
+                    semaphore.Wait();
+                    try
+                    {
+                        var info = new FileInfo(file);
+                        string extension = Path.GetExtension(file).Replace(".", "");
+                        Thread.Sleep(5000);
 
-                    File.Move(file, destPath);
-                }
-                finally
+                        string destFolder = Path.Combine(_path, extension);
+                        string destPath = Path.Combine(destFolder, Path.GetFileName(file));
+
+                        File.Move(file, destPath, true);
+                        lock (_lock)
+                        {
+                            moveLog.Add((file, destPath));
+                        }
+                    }
+                    finally
+                    {
+                        semaphore.Release();
+                    }
+                });
+            }
+            catch (OperationCanceledException)
+            {
+                for (int i = moveLog.Count - 1; i >= 0; i--)
                 {
-                    semaphore.Release();
+                    File.Move(moveLog[i].from, moveLog[i].to, true);
                 }
-            });
+                throw;
+
+            }
         }
     }
 }
