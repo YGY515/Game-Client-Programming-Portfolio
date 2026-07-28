@@ -2,13 +2,13 @@
 {
     public abstract class FileOrganizerBase
     {
-        public abstract string Organize(string path);
+        public abstract string Organize(string path, CancellationToken token, IProgress<int> progress = null);
 
         public abstract void CollectFiles();
 
         public abstract void CreateFolders();
 
-        public abstract void MoveFiles();
+        public abstract void MoveFiles(CancellationToken token, IProgress<int> progress = null);
 
         public string PrintLog(int fileNum, int folderNum)
         {

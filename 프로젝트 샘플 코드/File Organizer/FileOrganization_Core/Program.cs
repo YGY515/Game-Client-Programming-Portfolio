@@ -1,13 +1,19 @@
-using FileOrganization_Core;
+﻿using FileOrganization_Core;
 using FileOrganization_Core.Organization;
 using System.Threading.Channels;
 
 class Program
 {
-    static FileOrganizerBase fileOrganizer = null;
     static void Main(string[] args)
     {
         GetDirectory();
+    }
+
+    public class SyncProgress<T> : IProgress<T>
+    {
+        private readonly Action<T> _handler;
+        public SyncProgress(Action<T> handler) => _handler = handler;
+        public void Report(T value) => _handler(value);
     }
 
     public static void GetDirectory()
@@ -50,8 +56,11 @@ class Program
                     break;
                 }    
             }
-        }
-        );
+        });
+
+        int totalFiles = folders.Sum(f => Directory.GetFiles(f).Length);
+        int totalDone = 0;
+        object progressLock = new object();
 
         Parallel.ForEach(folders, folder =>
         {
@@ -64,8 +73,19 @@ class Program
                 _ => throw new NotImplementedException()
             };
             try
-            {
-                string result = organizer.Organize(folder, cts.Token);
+            { 
+                // 진행율 표시
+                var progress = new SyncProgress<int>(_ =>
+                {
+                    int current = Interlocked.Increment(ref totalDone);
+                    int percent = (int)((double)current / totalFiles * 100);
+                    lock (progressLock)
+                    {
+                        Console.WriteLine($"\r파일 정리 {percent}% 완료...");
+                    }
+                });
+
+                string result = organizer.Organize(folder, cts.Token, progress);
                 Console.WriteLine($"[{folder}] {result}");
             }
             catch (OperationCanceledException)
