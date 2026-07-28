@@ -12,14 +12,14 @@ namespace FileOrganization_Core.Organization
         List<String> files = new List<string>();
         List<(string from, string to)> moveLog = new List<(string, string)>();
 
-        public override string Organize(string path, CancellationToken token)
+        public override string Organize(string path, CancellationToken token, IProgress<int> progress)
         {
             _path = path;
             files = Directory.GetFiles(_path).ToList();
 
             CollectFiles();
             CreateFolders();
-            MoveFiles(token);
+            MoveFiles(token, progress);
             
             return PrintLog(count, fileList.Count);
         }
@@ -43,10 +43,11 @@ namespace FileOrganization_Core.Organization
             }
         }
 
-        public override void MoveFiles(CancellationToken token)
+        public override void MoveFiles(CancellationToken token, IProgress<int> progress)
         {
             var options = new ParallelOptions { CancellationToken = token };
             SemaphoreSlim semaphore = new SemaphoreSlim(4);
+            int done = 0;
 
             try
             {
@@ -58,7 +59,7 @@ namespace FileOrganization_Core.Organization
                     {
                         var info = new FileInfo(file);
                         string extension = Path.GetExtension(file).Replace(".", "");
-                        Thread.Sleep(5000);
+                        //Thread.Sleep(2000);  취소 테스트용
 
                         string destFolder = Path.Combine(_path, extension);
                         string destPath = Path.Combine(destFolder, Path.GetFileName(file));
@@ -68,6 +69,9 @@ namespace FileOrganization_Core.Organization
                         {
                             moveLog.Add((file, destPath));
                         }
+
+                        int current = Interlocked.Increment(ref done);
+                        progress?.Report(1);
                     }
                     finally
                     {
@@ -82,7 +86,6 @@ namespace FileOrganization_Core.Organization
                     File.Move(moveLog[i].from, moveLog[i].to, true);
                 }
                 throw;
-
             }
         }
     }
