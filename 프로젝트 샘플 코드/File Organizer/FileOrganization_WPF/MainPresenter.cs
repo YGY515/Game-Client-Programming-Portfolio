@@ -1,5 +1,6 @@
 ﻿using FileOrganization_Core;
 using FileOrganization_Core.Organization;
+
 using System.IO;
 
 namespace FileOrganization_WPF
@@ -18,6 +19,12 @@ namespace FileOrganization_WPF
         {
             cts = new CancellationTokenSource();
             string path = _view.SelectedPath;
+
+            var progressWindow = new ProgressWindow();
+            progressWindow.CancelRequested += () => cts.Cancel();
+            progressWindow.Show();
+
+            var progress = new Progress<int>(percent => progressWindow.UpdateProgress(percent));
 
             if (path == null || Directory.Exists(path) == false)
             {
@@ -38,9 +45,19 @@ namespace FileOrganization_WPF
                 _view.ShowError("올바른 정리 기준을 고르세요.");
                 return;
             }
-
-            string result = await Task.Run(() => organizer.Organize(path, cts.Token));
-            _view.ShowResult(result);
+            try
+            {
+                string result = await Task.Run(() => organizer.Organize(path, cts.Token));
+                _view.ShowResult(result);
+            }
+            catch (OperationCanceledException)
+            {
+                _view.ShowError("취소되었습니다");
+            }
+            finally
+            {
+                progressWindow.Close();
+            }
         }
 
         public void OnCancelCliked()
