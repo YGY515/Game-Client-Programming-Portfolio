@@ -4,7 +4,7 @@
     {
         string _path = null;
         object _lock = new object();
-        int count = 0;
+        int _count = 0;
 
         HashSet<string> fileList = new HashSet<string>();
         List<String> files = new List<string>();
@@ -19,14 +19,14 @@
             CreateFolders();
             MoveFiles(token, progress);
             
-            return PrintLog(count, fileList.Count); 
+            return PrintLog(_count, fileList.Count); 
         }
 
         public override void CollectFiles()
         {
             foreach (var file in files)
             {
-                count++;
+                _count++;
                 string lang = Path.GetFileNameWithoutExtension(file);
 
                 if (lang[0] >= '가' && lang[0] <= '힣') lang = "Korean";
@@ -63,7 +63,7 @@
 
                         if (lang[0] >= '가' && lang[0] <= '힣') lang = "Korean";
                         else if (lang[0] >= 'a' && lang[0] <= 'z') lang = "English";
-                        //Thread.Sleep(2000);  취소 테스트용
+                        Thread.Sleep(2000);  //취소 테스트용
 
                         string destFolder = Path.Combine(_path, lang);
                         string destPath = Path.Combine(destFolder, Path.GetFileName(file));

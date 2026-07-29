@@ -6,7 +6,7 @@ namespace FileOrganization_Core.Organization
     {
         string _path = null;
         object _lock = new object();
-        int count = 0;
+        int _count = 0;
 
         HashSet<string> fileList = new HashSet<string>();
         List<String> files = new List<string>();
@@ -21,14 +21,14 @@ namespace FileOrganization_Core.Organization
             CreateFolders();
             MoveFiles(token, progress);
             
-            return PrintLog(count, fileList.Count);
+            return PrintLog(_count, fileList.Count);
         }
 
         public override void CollectFiles()
         {
             foreach (var file in files)
             {
-                count++;
+                _count++;
                 var info = new FileInfo(file);
                 string date = info.LastWriteTime.ToString("yyyy-MM");
                 fileList.Add(date); 
@@ -60,7 +60,7 @@ namespace FileOrganization_Core.Organization
                     {
                         var info = new FileInfo(file);
                         string date = info.LastWriteTime.ToString("yyyy-MM");
-                        //Thread.Sleep(2000);  취소 테스트용
+                        Thread.Sleep(2000);  //취소 테스트용
 
                         string destFolder = Path.Combine(_path, date);
                         string destPath = Path.Combine(destFolder, Path.GetFileName(file));
