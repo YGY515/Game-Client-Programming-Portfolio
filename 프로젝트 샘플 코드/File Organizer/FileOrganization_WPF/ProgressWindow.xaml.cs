@@ -12,5 +12,9 @@ public partial class ProgressWindow : Window
         Bar.Value = percent;
     }
 
-    private void Cancel_Click(object sender, RoutedEventArgs e) => CancelRequested?.Invoke();
+    private void Cancel_Click(object sender, RoutedEventArgs e)
+    {
+        PercentText.Text = "파일 정리 취소 중...";
+        CancelRequested?.Invoke();
+    }
 }
